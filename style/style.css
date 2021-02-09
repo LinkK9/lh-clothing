@@ -1,7 +1,20 @@
-header{
-    background-color: #EBE0E0;
+header {
+  background-color: #EBE0E0;
+}
+header nav {
+  height: 100%;
+}
+header nav #navbarSupportedContent.collapse.navbar-collapse form button {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  width: 20px;
+}
+header nav #navbarSupportedContent.collapse.navbar-collapse .icons a {
+  margin-left: 20px;
+}
+header nav #navbarSupportedContent.collapse.navbar-collapse .icons a img {
+  width: 20px;
 }
 
-.my-nav{
-    height: 100px;
-}
+/*# sourceMappingURL=style.css.map */

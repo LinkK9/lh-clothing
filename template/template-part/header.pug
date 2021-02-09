@@ -1,31 +1,47 @@
-header.container
-    nav.navbar.navbar-expand-lg.navbar-light.my-nav
-        a.navbar-brand(href='#')
-            img(src="image/f4add38e-b00f-4efc-8287-3c1c8c0da3ad_200x200.png", alt="", srcset="")
-        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-            span.navbar-toggler-icon
-        #navbarSupportedContent.collapse.navbar-collapse
-            ul.navbar-nav.mr-auto
-                li.nav-item.dropdown
-                    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Nam
+//- Mixin: 
+mixin menu-link(title)
+    li.nav-item.dropdown
+                    a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false').font-weight-bold= title 
                     .dropdown-menu(aria-labelledby='navbarDropdown')
-                        a.dropdown-item(href='#') SẢN PHẨM MỚI
+                        a.dropdown-item(href='#').font-weight-bold SẢN PHẨM MỚI
                         .dropdown-divider
-                        a.dropdown-item(href='#') ÁO
+                        a.dropdown-item(href='#').font-weight-bold ÁO
                         a.dropdown-item(href='#') Áo phông
                         a.dropdown-item(href='#') Áo nỉ
                         a.dropdown-item(href='#') Áo len
                         a.dropdown-item(href='#') Áo sơ mi
                         a.dropdown-item(href='#') Áo khoác
                         .dropdown-divider
-                        a.dropdown-item(href='#') QUẦN
+                        a.dropdown-item(href='#').font-weight-bold QUẦN
                         a.dropdown-item(href='#') Quần jeans
                         a.dropdown-item(href='#') Quần kaki
                         a.dropdown-item(href='#') Quần vải
                         a.dropdown-item(href='#') Quần shorts
                         .dropdown-divider
-                        a.dropdown-item(href='#') PHỤ KIỆN KHÁC
-                        
-            form.form-inline.my-2.my-lg-0
+                        a.dropdown-item(href='#').font-weight-bold PHỤ KIỆN KHÁC 
+
+
+//- SCSS
+
+header.container
+    nav.navbar.navbar-expand-lg.navbar-light.my-nav
+        a.navbar-brand(href='#')
+            img(src="image/logo-crop.png", alt="", srcset="")
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.m-auto
+                +menu-link('NAM')
+                +menu-link('NỮ')
+                +menu-link('BÉ GÁI')
+                +menu-link('BÉ TRAI')
+            form.form-inline.my-2.my-lg-0.ml-auto
                 input.form-control.mr-sm-2(type='search' placeholder='Tìm kiếm' aria-label='Search')
-                button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+                button(type='submit')
+                    img(src="image/icon/loupe.svg", alt="", srcset="")
+            .icons
+                a.icon-topbar(href="#")
+                    img(src="image/icon/user.svg", alt="", srcset="")
+                a.icon-topbar(href="#")
+                    img(src="image/icon/shopping-cart-of-checkered-design.svg", alt="", srcset="")
+            
