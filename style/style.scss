@@ -1,5 +1,12 @@
+// Variables
+$primary-color: #ED5A6B;
+$background-nav: #EBE0E0;
+
+
+
+// Scss
 header{
-    background-color: #EBE0E0;
+    background-color: $background-nav;
     nav{
         height: 100%;
         #navbarSupportedContent.collapse.navbar-collapse{
