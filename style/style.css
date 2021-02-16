@@ -11,7 +11,7 @@ ul li {
 }
 
 header {
-  background-color: #EBE0E0;
+  background-color: #ebe0e0;
 }
 header nav {
   height: 100%;
@@ -36,7 +36,7 @@ footer h6 {
   font-weight: bold;
 }
 footer .footer {
-  background-color: #EBE0E0;
+  background-color: #ebe0e0;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-left: -15px;
@@ -51,8 +51,19 @@ footer .divide-line {
   background-color: black;
   margin-bottom: 30px;
 }
+footer .sub-email {
+  margin-bottom: 30px;
+}
 footer .sub-email .sub-title {
   margin-right: 15px;
+  font-weight: bold;
+}
+footer .sub-email input {
+  width: 390px;
+  margin-right: 10px;
+}
+footer .sub-email button {
+  background-color: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

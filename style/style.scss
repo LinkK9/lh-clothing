@@ -1,84 +1,88 @@
 // Variables
-$primary-color: #ED5A6B;
-$background-nav: #EBE0E0;
-
-
+$primary-color: #ed5a6b;
+$background-nav: #ebe0e0;
 
 // Scss
 
 a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
-ul{
-    padding: 0;
-    li{
-        list-style: none;
-    }
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
 }
 
-
-header{
-    background-color: $background-nav;
-    nav{
-        height: 100%;
-        #navbarSupportedContent.collapse.navbar-collapse{
-            form{
-                button{
-                    border: none;
-                    background-color: inherit;
-                    padding: 0;
-                    width: 20px;
-                }
-            }
-            .icons{
-                a{
-                    margin-left: 20px;
-                    img{
-                        width: 20px;
-                    }
-                }
-            }
-            
+header {
+  background-color: $background-nav;
+  nav {
+    height: 100%;
+    #navbarSupportedContent.collapse.navbar-collapse {
+      form {
+        button {
+          border: none;
+          background-color: inherit;
+          padding: 0;
+          width: 20px;
         }
+      }
+      .icons {
+        a {
+          margin-left: 20px;
+          img {
+            width: 20px;
+          }
+        }
+      }
     }
+  }
 }
 
-footer{
-    p{
-        margin-bottom: 5px;
+footer {
+  p {
+    margin-bottom: 5px;
+  }
+  h6 {
+    font-weight: bold;
+  }
+
+  .footer {
+    // width: 100%;
+    background-color: $background-nav;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+    .social {
+      ul {
+        li {
+          margin-right: 10px;
+        }
+      }
     }
-    h6{
+  }
+
+  .divide-line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 30px;
+  }
+
+  .sub-email {
+    margin-bottom: 30px;
+    .sub-title {
+        margin-right: 15px;
         font-weight: bold;
     }
-
-    .footer{
-        // width: 100%;
-        background-color: $background-nav;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        margin-left: -15px;
-        margin-right: -15px;
-        .social{
-            ul{
-                li{
-                    margin-right: 10px;
-                }
-            }
-        }
+    input{
+        width: 390px;
+        margin-right: 10px;
     }
-    
-    .divide-line{
-        width: 100%;
-        height: 1px;
-        background-color: black;
-        margin-bottom: 30px;
+    button{
+        background-color: inherit;
     }
-
-    .sub-email{
-        .sub-title{
-            margin-right: 15px;
-        }
-    }
-    
+  }
 }

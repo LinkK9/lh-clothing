@@ -1,3 +1,18 @@
 extends template-part/layout.pug
 block title
     title LH Clothing
+block main 
+    #carouselExampleControls.carousel.slide(data-ride='carousel').container
+      .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src='image/couple-tx-trẻ-em-676x390.jpg' alt='...')
+            .carousel-item
+              img.d-block.w-100(src='image/couple-tx-nam-676x390.jpg' alt='...')
+            .carousel-item
+              img.d-block.w-100(src='...' alt='...')
+      a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
