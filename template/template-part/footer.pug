@@ -1,18 +1,52 @@
 footer.container
-    .sub-email.justify-content-center.d-flex
+    .sub-email.justify-content-center.d-flex.align-items-center
         .sub-title Đăng ký nhận tin 
         form(action="")
-            input(type="email", name="")
+            input(type="email", name="", placeholder="Email")
             button(type="submit") Đăng ký
             
     .divide-line
 
     .footer.d-flex.justify-content-between
-        .content-col
-            h3.foot-title LIÊN HỆ
+        .content-col.col-md-4.col-sm-8
+            h6.foot-title LIÊN HỆ
             p.foot-content Địa chỉ liên hệ:  Số 348 Nguyễn Trãi, Q. Thanh Xuân, Hà Nội
             p.foot-content Điện thoại: +84369232329
             p.foot-content Fax: +84369232329
             p.foot-content Email: dont@lhclothing.com
 
+        .content-col.col-md-4.col-sm 
+            h6.foot-title HỖ TRỢ
+            ul 
+                li 
+                    a(href="#") Chính sách vận chuyển
+                li 
+                    a(href="#") Hướng dẫn thanh toán 
+                li 
+                    a(href="#") Hướng dẫn chọn kích cỡ
+                li 
+                    a(href="#") Quy định đổi trả
+                li 
+                    a(href="#") chính sách khách hàng thân thiết
+        
+        .content-col.col-md-4.col-sm 
+            h6.foot-title TƯ VẤN BÁN HÀNG
+            p.phone-number 
+                a(href="tel:+0369232329")
+                    i.fa.fa-phone
+                    |  +0369232329
+            p.more-info Tất cả các ngày trong tuần 
+
+            .social 
+                h6.foot-title KẾT NỐI VỚI CHÚNG TÔI
+                ul.navbar-social.d-flex
+                    li
+                        a(href='#')
+                            i.fa.fa-facebook-official(aria-hidden='true')
+                    li
+                        a(href='#')
+                            i.fa.fa-instagram(aria-hidden='true')
+                    li
+                        a(href='#')
+                            i.fa.fa-youtube(aria-hidden='true')
 
