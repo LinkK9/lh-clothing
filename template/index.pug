@@ -1,8 +1,8 @@
 extends template-part/layout.pug
 block title
-    title LH Clothing
+  title LH Clothing
 block main 
-    #carouselExampleControls.carousel.slide(data-ride='carousel').container
+  #carouselExampleControls.carousel.slide(data-ride='carousel').container.banner
       .carousel-inner
             .carousel-item.active
               img.d-block.w-100(src='image/couple-tx-trẻ-em-676x390.jpg' alt='...')
@@ -16,3 +16,6 @@ block main
       a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
             span.carousel-control-next-icon(aria-hidden='true')
             span.sr-only Next
+  .new-products 
+    .head-nav
+      

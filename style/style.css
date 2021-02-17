@@ -38,9 +38,11 @@ footer h6 {
 footer .footer {
   background-color: #ebe0e0;
   padding-top: 30px;
-  padding-bottom: 30px;
   margin-left: -15px;
   margin-right: -15px;
+}
+footer .footer .content-col {
+  margin-bottom: 20px;
 }
 footer .footer .social ul li {
   margin-right: 10px;
@@ -64,6 +66,15 @@ footer .sub-email input {
 }
 footer .sub-email button {
   background-color: inherit;
+}
+
+main {
+  margin-top: 30px;
+}
+main .banner {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

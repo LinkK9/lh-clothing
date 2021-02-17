@@ -52,9 +52,11 @@ footer {
     // width: 100%;
     background-color: $background-nav;
     padding-top: 30px;
-    padding-bottom: 30px;
     margin-left: -15px;
     margin-right: -15px;
+    .content-col {
+      margin-bottom: 20px;
+    }
     .social {
       ul {
         li {
@@ -74,15 +76,24 @@ footer {
   .sub-email {
     margin-bottom: 30px;
     .sub-title {
-        margin-right: 15px;
-        font-weight: bold;
+      margin-right: 15px;
+      font-weight: bold;
     }
-    input{
-        width: 390px;
-        margin-right: 10px;
+    input {
+      width: 390px;
+      margin-right: 10px;
     }
-    button{
-        background-color: inherit;
+    button {
+      background-color: inherit;
     }
+  }
+}
+
+main {
+  margin-top: 30px;
+  .banner {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
   }
 }
