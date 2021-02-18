@@ -76,5 +76,23 @@ main .banner {
   padding-right: 0;
   margin-bottom: 30px;
 }
+main .new-products {
+  padding-left: 0;
+  padding-right: 0;
+}
+main .new-products .head-nav {
+  background-color: #454573;
+  text-transform: uppercase;
+  color: #FCE36F;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+main .new-products .head-nav a {
+  color: white;
+}
+main .new-products .head-nav ul {
+  margin-bottom: 0;
+  width: 30%;
+}
 
 /*# sourceMappingURL=style.css.map */

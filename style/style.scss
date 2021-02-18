@@ -1,7 +1,7 @@
 // Variables
 $primary-color: #ed5a6b;
 $background-nav: #ebe0e0;
-
+$secondary-color: #454573;
 // Scss
 
 a {
@@ -96,4 +96,30 @@ main {
     padding-right: 0;
     margin-bottom: 30px;
   }
+
+  .new-products {
+    padding-left: 0;
+    padding-right: 0;
+
+    .head-nav {
+      background-color: $secondary-color;
+      text-transform: uppercase;
+      color: #FCE36F;
+      padding-left: 15px;
+      padding-right: 15px;
+      a{
+        color: white;
+      }
+
+      ul {
+        margin-bottom: 0;
+        width: 30%;
+        li {
+
+        }
+      }
+    }
+  }
+  
+
 }
