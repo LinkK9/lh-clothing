@@ -1,6 +1,11 @@
+/* Mixin */
 a {
   color: #000;
   text-decoration: none;
+}
+
+img {
+  width: 100%;
 }
 
 ul {
@@ -76,23 +81,53 @@ main .banner {
   padding-right: 0;
   margin-bottom: 30px;
 }
-main .new-products {
+main .new-products,
+main .sale-product {
   padding-left: 0;
   padding-right: 0;
+  margin-bottom: 30px;
 }
-main .new-products .head-nav {
+main .new-products .head-nav,
+main .sale-product .head-nav {
   background-color: #454573;
+  height: 60px;
   text-transform: uppercase;
-  color: #FCE36F;
+  color: #fce36f;
+  margin-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
 }
-main .new-products .head-nav a {
+main .new-products .head-nav a,
+main .sale-product .head-nav a {
   color: white;
+  font-size: 14px;
 }
-main .new-products .head-nav ul {
+main .new-products .head-nav ul,
+main .sale-product .head-nav ul {
   margin-bottom: 0;
   width: 30%;
+}
+main .new-products .nav-sale,
+main .sale-product .nav-sale {
+  margin-top: 30px;
+}
+main .new-products .products-grid,
+main .sale-product .products-grid {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+main .new-products .products-grid .box-item,
+main .sale-product .products-grid .box-item {
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+main .new-products .products-grid .box-item .box-image .box-tag,
+main .sale-product .products-grid .box-item .box-image .box-tag {
+  position: absolute;
+  background-color: #ed5a6b;
+  color: #fff;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

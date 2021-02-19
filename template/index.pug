@@ -1,4 +1,18 @@
+//- Extend
 extends template-part/layout.pug
+
+//- Mixins
+mixin box-item(src, title, currentPrice, tag, oldPrice)
+  .box-item.col-md-4.col-6
+        .box-image 
+          .box-tag=tag
+          img(src=src)
+        .box-title=title  
+        .box-price.d-flex.justify-content-start
+          .current-price=currentPrice
+          .old-price=oldPrice
+
+//- Pug
 block title
   title LH Clothing
 block main 
@@ -16,6 +30,7 @@ block main
       a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
             span.carousel-control-next-icon(aria-hidden='true')
             span.sr-only Next
+            
   .new-products.container 
     .head-nav.d-flex.justify-content-between.align-items-center
       .head-title sản phẩm mới 
@@ -30,6 +45,30 @@ block main
           a(href="#") bé gái
       a(href="#") tất cả         
     .products-grid.d-flex.flex-wrap 
-      .box-item 
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
 
-      
+    .sale-products.container 
+    .head-nav.d-flex.justify-content-between.align-items-center.nav-sale
+      .head-title HÀNG KHUYẾN MẠI
+      ul.head-menu-list.d-flex.justify-content-between
+        li 
+          a(href="#") nam
+        li 
+          a(href="#") nữ
+        li 
+          a(href="#") bé trai
+        li 
+          a(href="#") bé gái
+      a(href="#") tất cả         
+    .products-grid.d-flex.flex-wrap 
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")

@@ -1,12 +1,18 @@
+// Import
+@import "style-part/media-mixin.scss";
+
 // Variables
 $primary-color: #ed5a6b;
 $background-nav: #ebe0e0;
 $secondary-color: #454573;
-// Scss
 
+// Scss
 a {
   color: #000;
   text-decoration: none;
+}
+img {
+  width: 100%;
 }
 ul {
   padding: 0;
@@ -96,30 +102,48 @@ main {
     padding-right: 0;
     margin-bottom: 30px;
   }
-
-  .new-products {
+  .new-products,
+  .sale-product {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 30px;
 
     .head-nav {
       background-color: $secondary-color;
+      height: 60px;
       text-transform: uppercase;
-      color: #FCE36F;
+      color: #fce36f;
+      margin-bottom: 15px;
       padding-left: 15px;
       padding-right: 15px;
-      a{
+      a {
         color: white;
+        font-size: 14px;
       }
-
       ul {
         margin-bottom: 0;
         width: 30%;
-        li {
-
+      }
+    }
+    .nav-sale {
+      margin-top: 30px;
+    }
+    .products-grid {
+      margin-left: -5px;
+      margin-right: -5px;
+      .box-item {
+        position: relative;
+        padding-left: 5px;
+        padding-right: 5px;
+        .box-image {
+          .box-tag {
+            position: absolute;
+            background-color: $primary-color;
+            color: #fff;
+            padding: 5px;
+          }
         }
       }
     }
   }
-  
-
 }
