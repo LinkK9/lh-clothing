@@ -36,6 +36,19 @@ header {
 header nav {
   height: 100%;
 }
+@media (max-width: 479px) {
+  header nav #navbarSupportedContent.collapse.navbar-collapse form {
+    width: 60%;
+    margin: 0 !important;
+  }
+  header nav #navbarSupportedContent.collapse.navbar-collapse form input {
+    display: inline-block;
+  }
+  header nav #navbarSupportedContent.collapse.navbar-collapse .icons {
+    display: inline-block;
+    width: 30%;
+  }
+}
 header nav #navbarSupportedContent.collapse.navbar-collapse form button {
   border: none;
   background-color: inherit;
@@ -159,6 +172,7 @@ main .sale-products .products-grid .box-item {
   position: relative;
   padding-left: 5px;
   padding-right: 5px;
+  margin-bottom: 20px;
 }
 main .new-products .products-grid .box-item .box-image .box-tag,
 main .sale-products .products-grid .box-item .box-image .box-tag {
@@ -177,6 +191,16 @@ main .new-products .products-grid .box-item .box-title {
 }
 main .new-products .products-grid .box-item .box-price {
   justify-content: center !important;
+}
+main .service {
+  padding: 0;
+  margin-bottom: 30px;
+}
+main .service .service-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

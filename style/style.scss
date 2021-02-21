@@ -36,6 +36,20 @@ header {
   nav {
     height: 100%;
     #navbarSupportedContent.collapse.navbar-collapse {
+      @include mobile {
+        form {
+          width: 60%;
+          margin: 0 !important;
+          input {
+            display: inline-block;
+          }
+          
+        }
+        .icons {
+            display: inline-block;
+            width: 30%;
+        }
+      }
       form {
         button {
           border: none;
@@ -162,6 +176,7 @@ main {
         position: relative;
         padding-left: 5px;
         padding-right: 5px;
+        margin-bottom: 20px;
         .box-image {
           .box-tag {
             position: absolute;
@@ -187,6 +202,16 @@ main {
           justify-content: center !important;
         }
       }
+    }
+  }
+  .service {
+    padding: 0;
+    margin-bottom: 30px;
+    .service-title {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
   }
 }
