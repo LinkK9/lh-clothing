@@ -4,13 +4,14 @@ extends template-part/layout.pug
 //- Mixins
 mixin box-item(src, title, currentPrice, tag, oldPrice)
   .box-item.col-md-4.col-6
-        .box-image 
-          .box-tag=tag
-          img(src=src)
-        .box-title=title  
-        .box-price.d-flex.justify-content-start
-          .current-price=currentPrice
-          .old-price=oldPrice
+    .box-image 
+      .box-tag=tag
+      a(href="#") 
+        img(src=src)
+    .box-title=title  
+    .box-price.d-flex.justify-content-start
+      .current-price=currentPrice
+      .old-price=oldPrice
 
 //- Pug
 block title
@@ -45,12 +46,12 @@ block main
           a(href="#") bé gái
       a(href="#").read-more tất cả         
     .products-grid.d-flex.flex-wrap 
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000đ", "NEW")
+      +box-item('image/nibegaito.jpg', "Áo nỉ bé gái", "250.000đ", "NEW")
+      +box-item('image/nu.jpg', "áo khoác lông vũ nữ", "550.000đ", "NEW")
+      +box-item('image/nam.jpg', "Áo nỉ nam", "300.000d", "NEW")
+      +box-item('image/ao ni nam co mu.jpg', "Áo nỉ có mũ", "250.000đ", "NEW")
+      +box-item('image/AO NI NU TRON.jpg', "Áo nỉ nữ cổ tròn", "250.000đ", "NEW")
 
   .sale-products.container 
     .head-nav.d-flex.justify-content-between.align-items-center.nav-sale
@@ -66,12 +67,12 @@ block main
           a(href="#") bé gái
       a(href="#").read-more tất cả         
     .products-grid.d-flex.flex-wrap 
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
-      +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000d", "NEW")
+      +box-item('image/ao khoac gio nam.jpg', "Áo khoác gió nam", "250.000đ", "50%", "500.000đ")
+      +box-item('image/2ls20w001-sa235-1-thumb.jpg', "Bộ mặc nhà bé trai", "200.000đ", "50%", "400.000đ")
+      +box-item('image/aokhoacninam.jpg', "Áo khoác nỉ nam", "150.000đ", "50%","300.000đ"  )
+      +box-item('image/8te20w003-so079-2-thumb.jpg', "Áo len nam cổ tròn", "250.000đ", "50%", "500.000đ")
+      +box-item('image/1tl20w009-sm235-1-thumb_1.jpg', "Áo phông bé gái", "200.000đ", "50%", "400.000đ")
+      +box-item('image/6it20w001-sm127-2-thumb.jpg', "Áo giữ nhiệt nữ", "250.000đ", "50%", "500.000đ")
   
   .service.container
     .row  

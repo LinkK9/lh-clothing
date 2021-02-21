@@ -38,15 +38,14 @@ header nav {
 }
 @media (max-width: 479px) {
   header nav #navbarSupportedContent.collapse.navbar-collapse form {
-    width: 60%;
     margin: 0 !important;
   }
   header nav #navbarSupportedContent.collapse.navbar-collapse form input {
-    display: inline-block;
+    width: 90%;
+    margin-right: 3px;
   }
   header nav #navbarSupportedContent.collapse.navbar-collapse .icons {
-    display: inline-block;
-    width: 30%;
+    display: flex;
   }
 }
 header nav #navbarSupportedContent.collapse.navbar-collapse form button {
@@ -95,10 +94,22 @@ footer .sub-email .sub-title {
 }
 footer .sub-email input {
   width: 390px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 footer .sub-email button {
   background-color: inherit;
+}
+@media (max-width: 479px) {
+  footer .sub-email {
+    display: block !important;
+  }
+  footer .sub-email .sub-title {
+    margin-bottom: 10px;
+  }
+  footer .sub-email input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
 
 main {
@@ -147,6 +158,8 @@ main .sale-products .head-nav {
   }
   main .new-products .head-nav .head-title,
 main .sale-products .head-nav .head-title {
+    position: relative;
+    top: 8px;
     align-self: flex-start;
   }
   main .new-products .head-nav .head-menu-list,
@@ -167,6 +180,12 @@ main .sale-products .products-grid {
   margin-left: -5px;
   margin-right: -5px;
 }
+@media (max-width: 479px) {
+  main .new-products .products-grid,
+main .sale-products .products-grid {
+    margin: 0;
+  }
+}
 main .new-products .products-grid .box-item,
 main .sale-products .products-grid .box-item {
   position: relative;
@@ -185,6 +204,13 @@ main .new-products .products-grid .box-item .box-price,
 main .sale-products .products-grid .box-item .box-price {
   font-weight: bold;
 }
+main .new-products .products-grid .box-item .box-price .old-price,
+main .sale-products .products-grid .box-item .box-price .old-price {
+  color: #978484;
+  font-weight: lighter;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
 main .new-products .products-grid .box-item .box-title {
   justify-content: center !important;
   text-align: center;
@@ -195,6 +221,11 @@ main .new-products .products-grid .box-item .box-price {
 main .service {
   padding: 0;
   margin-bottom: 30px;
+}
+@media (max-width: 479px) {
+  main .service {
+    margin-left: 10px;
+  }
 }
 main .service .service-title {
   text-transform: uppercase;

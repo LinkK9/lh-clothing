@@ -36,13 +36,15 @@ header.container
                 +menu-link('NỮ')
                 +menu-link('BÉ GÁI')
                 +menu-link('BÉ TRAI')
-            form.form-inline.my-2.my-lg-0.ml-auto
-                input.form-control.mr-sm-2(type='search' placeholder='Tìm kiếm' aria-label='Search')
-                button(type='submit')
-                    img(src="image/icon/loupe.svg", alt="", srcset="")
-            .icons
-                a.icon-topbar(href="#")
-                    img(src="image/icon/user.svg", alt="", srcset="")
-                a.icon-topbar(href="#")
-                    img(src="image/icon/shopping-cart-of-checkered-design.svg", alt="", srcset="")
+            
+            .search-cart.d-flex.align-items-center
+                form.form-inline.my-2.my-lg-0.ml-auto.d-flex
+                    input.form-control.mr-sm-2(type='search' placeholder='Tìm kiếm' aria-label='Search')
+                    button(type='submit')
+                        img(src="image/icon/loupe.svg", alt="", srcset="")
+                .icons
+                    a.icon-topbar(href="#")
+                        img(src="image/icon/user.svg", alt="", srcset="")
+                    a.icon-topbar(href="#")
+                        img(src="image/icon/shopping-cart-of-checkered-design.svg", alt="", srcset="")
             

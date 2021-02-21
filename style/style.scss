@@ -38,16 +38,15 @@ header {
     #navbarSupportedContent.collapse.navbar-collapse {
       @include mobile {
         form {
-          width: 60%;
           margin: 0 !important;
           input {
-            display: inline-block;
+            width: 90%;
+            margin-right: 3px;
           }
           
         }
         .icons {
-            display: inline-block;
-            width: 30%;
+          display: flex;
         }
       }
       form {
@@ -111,107 +110,22 @@ footer {
     }
     input {
       width: 390px;
-      margin-right: 10px;
+      margin-right: 5px;
     }
     button {
       background-color: inherit;
     }
+    @include mobile {
+      display: block !important;
+      .sub-title {
+        margin-bottom: 10px;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+    }
   }
 }
 
-main {
-  margin-top: 30px;
-  .banner {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 30px;
-  }
-  .new-products,
-  .sale-products {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 30px;
-
-    .head-nav {
-      background-color: $secondary-color;
-      height: 60px;
-      text-transform: uppercase;
-      color: #fce36f;
-      font-weight: bold;
-      margin-bottom: 15px;
-      padding-left: 15px;
-      padding-right: 15px;
-      a {
-        color: white;
-        font-size: 14px;
-      }
-      ul {
-        margin-bottom: 0;
-        width: 30%;
-      }
-      .head-title{
-        font-weight: 800;
-      }
-
-      @include mobile {
-        flex-direction: column;
-        .head-title {
-          align-self: flex-start;
-        }
-        .head-menu-list {
-          width: 100%;
-        }
-        .read-more {
-          display: none;
-        }
-      }
-    }
-    .nav-sale {
-      margin-top: 30px;
-    }
-    .products-grid {
-      margin-left: -5px;
-      margin-right: -5px;
-      .box-item {
-        position: relative;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-bottom: 20px;
-        .box-image {
-          .box-tag {
-            position: absolute;
-            background-color: $primary-color;
-            color: #fff;
-            padding: 5px;
-          }
-        }
-        .box-price {
-          font-weight: bold;
-        }
-      }
-    }
-  }
-  .new-products {
-    .products-grid {
-      .box-item {
-        .box-title {
-          justify-content: center !important;
-          text-align: center;
-        }
-        .box-price {
-          justify-content: center !important;
-        }
-      }
-    }
-  }
-  .service {
-    padding: 0;
-    margin-bottom: 30px;
-    .service-title {
-      text-transform: uppercase;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-  }
-}
+@import 'style-part/_home-page.scss'
