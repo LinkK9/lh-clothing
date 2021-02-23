@@ -5,6 +5,11 @@ extends template-part/layout.pug
 //- Pug
 block title
   title LH Clothing
+block link
+    link(rel='stylesheet' type='text/css' href='node_modules/slick-carousel/slick/slick.css')
+    link(rel='stylesheet' type='text/css' href='node_modules/slick-carousel/slick/slick-theme.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    link(rel="stylesheet", href="style/style.css")
 block main
     nav(aria-label='breadcrumb').container
         ol.breadcrumb
@@ -18,9 +23,25 @@ block main
     
     .product.container
         .product-main 
-            .product-box-image
-                .gallery-col
-                .image-main
+            .product-box-image.d-flex
+                .gallery-col.slider.slider-nav
+                    div
+                        img(src="image/1.jpg", alt="", srcset="")
+                    div 
+                        img(src="image/2.jpg", alt="", srcset="")
+                    div 
+                        img(src="image/nibegai.jpg", alt="", srcset="")
+                    div 
+                        img(src="image/3.jpg", alt="", srcset="")
+                .image-main.slider.slider-for
+                    div
+                        img(src="image/1.jpg", alt="", srcset="")
+                    div 
+                        img(src="image/2.jpg", alt="", srcset="")
+                    div 
+                        img(src="image/nibegai.jpg", alt="", srcset="")
+                    div 
+                        img(src="image/3.jpg", alt="", srcset="")
             .product-info 
                 .product-title 
                 .product-price 
@@ -28,4 +49,11 @@ block main
                 .product-size 
                 .product-quantity 
                 form(action="").submit-button
-                .product-descryption
+                .product-description
+    
+
+    //- scripts
+    script(type='text/javascript' src='https://code.jquery.com/jquery-1.11.0.min.js')
+    script(type='text/javascript' src='https://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript' src='node_modules/slick-carousel/slick/slick.js')
+    script(src="js/mySlick.js") 

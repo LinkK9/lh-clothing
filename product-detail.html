@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -66,9 +69,19 @@
     </nav>
     <div class="product container">
       <div class="product-main"> 
-        <div class="product-box-image">
-          <div class="gallery-col"></div>
-          <div class="image-main"></div>
+        <div class="product-box-image d-flex">
+          <div class="gallery-col slider slider-nav">
+            <div><img src="image/1.jpg" alt="" srcset=""></div>
+            <div> <img src="image/2.jpg" alt="" srcset=""></div>
+            <div> <img src="image/nibegai.jpg" alt="" srcset=""></div>
+            <div> <img src="image/3.jpg" alt="" srcset=""></div>
+          </div>
+          <div class="image-main slider slider-for">
+            <div><img src="image/1.jpg" alt="" srcset=""></div>
+            <div> <img src="image/2.jpg" alt="" srcset=""></div>
+            <div> <img src="image/nibegai.jpg" alt="" srcset=""></div>
+            <div> <img src="image/3.jpg" alt="" srcset=""></div>
+          </div>
         </div>
         <div class="product-info"> 
           <div class="product-title"> </div>
@@ -77,10 +90,14 @@
           <div class="product-size"> </div>
           <div class="product-quantity"> </div>
           <form class="submit-button" action=""></form>
-          <div class="product-descryption"></div>
+          <div class="product-description"></div>
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.js"></script>
+    <script src="js/mySlick.js"> </script>
   </main>
   <footer class="container">
     <div class="sub-email justify-content-center d-flex align-items-center">
