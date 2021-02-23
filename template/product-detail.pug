@@ -1,0 +1,31 @@
+//- Extends
+extends template-part/layout.pug
+
+
+//- Pug
+block title
+  title LH Clothing
+block main
+    nav(aria-label='breadcrumb').container
+        ol.breadcrumb
+            li.breadcrumb-item
+                a(href='#') Trang chủ
+            li.breadcrumb-item
+                a(href='#') Bé gái
+            li.breadcrumb-item
+                a(href='#') Áo
+            li.breadcrumb-item.active(aria-current='page') Áo nỉ bé gái cổ tròn
+    
+    .product.container
+        .product-main 
+            .product-box-image
+                .gallery-col
+                .image-main
+            .product-info 
+                .product-title 
+                .product-price 
+                .product-color 
+                .product-size 
+                .product-quantity 
+                form(action="").submit-button
+                .product-descryption
