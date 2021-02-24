@@ -3,6 +3,7 @@
   slidesToScroll: 1,
   arrows: false,
   fade: true,
+  dots: true,
   asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
@@ -11,5 +12,6 @@ $('.slider-nav').slick({
   asNavFor: '.slider-for',
   centerMode: true,
   focusOnSelect: true,
-  vertical: true
+  vertical: true,
+  arrows: false
 });

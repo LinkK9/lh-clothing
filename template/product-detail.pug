@@ -11,10 +11,10 @@ block link
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
     link(rel="stylesheet", href="style/style.css")
 block main
-    nav(aria-label='breadcrumb').container
+    nav(aria-label='breadcrumb').container.sub-nav
         ol.breadcrumb
             li.breadcrumb-item
-                a(href='#') Trang chủ
+                a(href='index.html') Trang chủ
             li.breadcrumb-item
                 a(href='#') Bé gái
             li.breadcrumb-item
@@ -22,33 +22,59 @@ block main
             li.breadcrumb-item.active(aria-current='page') Áo nỉ bé gái cổ tròn
     
     .product.container
-        .product-main 
+        .product-main.d-flex
             .product-box-image.d-flex
                 .gallery-col.slider.slider-nav
                     div
-                        img(src="image/1.jpg", alt="", srcset="")
+                        img(src="image/nibegaito.jpg", alt="", srcset="")
                     div 
                         img(src="image/2.jpg", alt="", srcset="")
                     div 
                         img(src="image/nibegai.jpg", alt="", srcset="")
-                    div 
+                    div
                         img(src="image/3.jpg", alt="", srcset="")
+                    div 
+                        img(src="image/4.jpg", alt="", srcset="")
                 .image-main.slider.slider-for
                     div
-                        img(src="image/1.jpg", alt="", srcset="")
+                        img(src="image/nibegaito.jpg", alt="", srcset="")
                     div 
                         img(src="image/2.jpg", alt="", srcset="")
                     div 
-                        img(src="image/nibegai.jpg", alt="", srcset="")
+                        img(src="image/nibegaito.jpg", alt="", srcset="")
                     div 
                         img(src="image/3.jpg", alt="", srcset="")
-            .product-info 
-                .product-title 
-                .product-price 
+                    div 
+                        img(src="image/4.jpg", alt="", srcset="")
+            form.product-info.d-flex.flex-column 
+                .product-title
+                    h1 ÁO NỈ CỔ TRÒN BÉ GÁI
+                .product-price 170.000đ
                 .product-color 
+                    .color-label CHỌN MÀU:
+                    .colors-set.d-flex 
+                        a(href="#")
+                            .color-box.pink.box
+                        a(href="#") 
+                            .color-box.green.box
+                        a(href="#")
+                            .color-box.yellow.box
                 .product-size 
-                .product-quantity 
-                form(action="").submit-button
+                    .size-label CHỌN KÍCH CỠ:
+                    .size-set.d-flex 
+                        a(href="#")
+                            .size-box.box S
+                        a(href="#")
+                            .size-box.box M
+                        a(href="#")
+                            .size-box.box L
+                .product-quantity
+                    label(for="quantity") Số lượng:
+                    input#quantity(type="number", name="")
+
+                .submit-button.d-flex
+                    button(type="submit").add-cart THÊM VÀO GIỎ
+                    button(type="submit").payment THANH TOÁN NGAY
                 .product-description
     
 

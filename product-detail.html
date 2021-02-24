@@ -15,7 +15,7 @@
 </head>
 <body>
   <header class="container">
-    <nav class="navbar navbar-expand-lg navbar-light my-nav"><a class="navbar-brand" href="#"><img src="image/logo-crop.png" alt="" srcset=""></a>
+    <nav class="navbar navbar-expand-lg navbar-light my-nav"><a class="navbar-brand" href="index.html"><img src="image/logo-crop.png" alt="" srcset=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
@@ -59,39 +59,61 @@
     </nav>
   </header>
   <main>
-    <nav class="container" aria-label="breadcrumb">
+    <nav class="container sub-nav" aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
         <li class="breadcrumb-item"><a href="#">Bé gái</a></li>
         <li class="breadcrumb-item"><a href="#">Áo</a></li>
         <li class="breadcrumb-item active" aria-current="page">Áo nỉ bé gái cổ tròn</li>
       </ol>
     </nav>
     <div class="product container">
-      <div class="product-main"> 
+      <div class="product-main d-flex">
         <div class="product-box-image d-flex">
           <div class="gallery-col slider slider-nav">
-            <div><img src="image/1.jpg" alt="" srcset=""></div>
+            <div><img src="image/nibegaito.jpg" alt="" srcset=""></div>
             <div> <img src="image/2.jpg" alt="" srcset=""></div>
             <div> <img src="image/nibegai.jpg" alt="" srcset=""></div>
-            <div> <img src="image/3.jpg" alt="" srcset=""></div>
+            <div><img src="image/3.jpg" alt="" srcset=""></div>
+            <div> <img src="image/4.jpg" alt="" srcset=""></div>
           </div>
           <div class="image-main slider slider-for">
-            <div><img src="image/1.jpg" alt="" srcset=""></div>
+            <div><img src="image/nibegaito.jpg" alt="" srcset=""></div>
             <div> <img src="image/2.jpg" alt="" srcset=""></div>
-            <div> <img src="image/nibegai.jpg" alt="" srcset=""></div>
+            <div> <img src="image/nibegaito.jpg" alt="" srcset=""></div>
             <div> <img src="image/3.jpg" alt="" srcset=""></div>
+            <div> <img src="image/4.jpg" alt="" srcset=""></div>
           </div>
         </div>
-        <div class="product-info"> 
-          <div class="product-title"> </div>
-          <div class="product-price"> </div>
-          <div class="product-color"> </div>
-          <div class="product-size"> </div>
-          <div class="product-quantity"> </div>
-          <form class="submit-button" action=""></form>
+        <form class="product-info d-flex flex-column"> 
+          <div class="product-title">
+            <h1>ÁO NỈ CỔ TRÒN BÉ GÁI</h1>
+          </div>
+          <div class="product-price">170.000đ</div>
+          <div class="product-color"> 
+            <div class="color-label">CHỌN MÀU:</div>
+            <div class="colors-set d-flex"> <a href="#">
+                <div class="color-box pink box"></div></a><a href="#"> 
+                <div class="color-box green box"></div></a><a href="#">
+                <div class="color-box yellow box"></div></a></div>
+          </div>
+          <div class="product-size"> 
+            <div class="size-label">CHỌN KÍCH CỠ:</div>
+            <div class="size-set d-flex"> <a href="#">
+                <div class="size-box box">S</div></a><a href="#">
+                <div class="size-box box">M</div></a><a href="#">
+                <div class="size-box box">L</div></a></div>
+          </div>
+          <div class="product-quantity">
+            <label for="quantity">Số lượng:</label>
+            <input id="quantity" type="number" name="">
+          </div>
+          <div class="submit-button d-flex">
+            <button class="add-cart" type="submit">THÊM VÀO GIỎ</button>
+            <button class="payment" type="submit">THANH TOÁN NGAY</button>
+          </div>
           <div class="product-description"></div>
-        </div>
+        </form>
       </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

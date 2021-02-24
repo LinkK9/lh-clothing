@@ -36,6 +36,10 @@ header {
 header nav {
   height: 100%;
 }
+header nav .navbar-brand img {
+  height: 60px;
+  width: auto;
+}
 @media (max-width: 479px) {
   header nav #navbarSupportedContent.collapse.navbar-collapse form {
     margin: 0 !important;
@@ -113,7 +117,7 @@ footer .sub-email button {
 }
 
 main {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 main .banner {
   padding-left: 0;
@@ -232,6 +236,122 @@ main .service .service-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.sub-nav {
+  padding: 0;
+}
+.sub-nav a {
+  color: #fff;
+}
+.sub-nav .breadcrumb {
+  background-color: #454573;
+  border-radius: 0;
+}
+.sub-nav .breadcrumb .breadcrumb-item.active {
+  color: #c7c9ca;
+  font-size: 14px;
+}
+
+.product .product-main .product-box-image {
+  width: 65%;
+  display: flex;
+}
+.product .product-main .product-box-image .gallery-col {
+  width: 106px;
+}
+.product .product-main .product-box-image .gallery-col .slick-slide {
+  width: 100% !important;
+}
+.product .product-main .product-box-image .image-main {
+  width: 550px;
+  margin-left: 60px;
+}
+.product .product-main form.product-info {
+  width: 100%;
+  margin-left: 60px;
+  font-size: 12px;
+}
+.product .product-main form.product-info .product-title h1 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.product .product-main form.product-info .product-price {
+  font-weight: bold;
+  color: #ed5a6b;
+  margin-bottom: 10px;
+}
+.product .product-main form.product-info .product-color {
+  margin-bottom: 20px;
+}
+.product .product-main form.product-info .product-color .colors-set .color-box {
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.product .product-main form.product-info .product-size .size-set .size-box {
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+.product .product-main form.product-info .box {
+  border: 1px solid black;
+}
+.product .product-main form.product-info .box:hover {
+  border: 3px solid #ed5a6b;
+}
+.product .product-main form.product-info .product-quantity {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.product .product-main form.product-info .product-quantity label {
+  display: block;
+  margin-bottom: 5px;
+}
+.product .product-main form.product-info .product-quantity input {
+  height: 24px;
+  width: 24px;
+}
+.product .product-main form.product-info .submit-button {
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+}
+.product .product-main form.product-info .submit-button button {
+  height: 30px;
+  color: #fff;
+  border: none;
+}
+.product .product-main form.product-info .submit-button .payment {
+  margin-left: 20px;
+  background-color: #ed5a6b;
+}
+.product .product-main form.product-info .submit-button .add-cart {
+  background-color: #454573;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */

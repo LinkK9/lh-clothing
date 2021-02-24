@@ -35,6 +35,12 @@ header {
   background-color: $background-nav;
   nav {
     height: 100%;
+    .navbar-brand {
+      img {
+        height: 60px;
+        width: auto;
+      }
+    }
     #navbarSupportedContent.collapse.navbar-collapse {
       @include mobile {
         form {
@@ -43,7 +49,6 @@ header {
             width: 90%;
             margin-right: 3px;
           }
-          
         }
         .icons {
           display: flex;
@@ -128,4 +133,5 @@ footer {
   }
 }
 
-@import 'style-part/_home-page.scss'
+@import "style-part/_home-page.scss";
+@import "style-part/_products-detail.scss";
