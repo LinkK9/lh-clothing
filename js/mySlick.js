@@ -15,3 +15,9 @@ $('.slider-nav').slick({
   vertical: true,
   arrows: false
 });
+
+$('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5
+});
