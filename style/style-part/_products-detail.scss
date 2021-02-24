@@ -95,6 +95,7 @@ img {
         input {
             height: 24px;
             width: 24px;
+            text-align: center;
         }
 
       }
@@ -116,7 +117,21 @@ img {
             background-color: $secondary-color;
         }
       }
+
+      .product-description {
+        margin-top: 20px;
+        p {
+          margin-bottom: 5px;
+        }
+        h6 {
+          font-size: 14px;
+          margin-top: 15px;
+          margin-bottom: 5px;
+          font-weight: 600;
+        }
+      }
     }
+
   }
 }
 
