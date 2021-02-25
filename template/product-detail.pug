@@ -8,8 +8,8 @@ mixin same-item(src, title, currentPrice, tag, oldPrice)
       .box-tag=tag
       a(href="product-detail.html") 
         img(src=src)
-    .box-title=title  
-    .box-price.d-flex.justify-content-start
+    .box-title.text-center=title  
+    .box-price.d-flex.justify-content-center
       .current-price=currentPrice
       .old-price=oldPric
 
@@ -45,7 +45,7 @@ block main
                     div
                         img(src="image/3.jpg", alt="", srcset="")
                     div 
-                        img(src="image/4.jpg", alt="", srcset="")
+                        img(src="image/5.jpg", alt="", srcset="")
                 .image-main.slider.slider-for
                     div
                         img(src="image/nibegaito.jpg", alt="", srcset="")
@@ -56,7 +56,7 @@ block main
                     div 
                         img(src="image/3.jpg", alt="", srcset="")
                     div 
-                        img(src="image/4.jpg", alt="", srcset="")
+                        img(src="image/5.jpg", alt="", srcset="")
             form.product-info.d-flex.flex-column 
                 .product-title
                     h1 ÁO NỈ CỔ TRÒN BÉ GÁI
@@ -101,7 +101,7 @@ block main
                         p Sấy khô ở nhiệt độ thấp.
     .same-products.container 
         .same-products-title SẢN PHẨM TƯƠNG TỰ
-        .same-products-slide.multiple-items
+        .same-products-slide.responsive
             +same-item("image/6.jpg", "Áo nỉ bé gái", "200.000đ")
             +same-item("image/7.jpg", "Áo nỉ bé gái", "200.000đ")
             +same-item("image/8.jpg", "Áo nỉ bé gái", "200.000đ")
@@ -111,8 +111,6 @@ block main
             +same-item("image/2.jpg", "Áo nỉ bé gái", "200.000đ")
 
 
-
-                    
 
     
 
