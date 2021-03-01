@@ -7,6 +7,7 @@ form.cart {
     table {
         width: 100%;
         border-spacing: 0;
+        margin-bottom: 20px;
         thead {
             tr {
                 th {
@@ -17,23 +18,31 @@ form.cart {
                 }
             }
         }
+        th {
+            text-align: center;
+        }
         td {
             text-align: center;
             vertical-align: top;
             padding-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid grey;
         }
 
         .cart-item {
             margin-top: 20px !important;
         }
         .cart-product-name {
-            display: flex;
+            text-align: left;
             img {
                 max-width: 60px;
                 margin-right: 10px;
             }
-            p {
+            div {
+                display: inline-block;
+                p {
                 margin-bottom: 5px;
+                }
             }
         }
         .cart-product-delete {
@@ -48,19 +57,26 @@ form.cart {
             .color-box {
                 margin-left: auto;
                 margin-right: auto;
+                margin-top: 0;
             }
         }
         .cart-product-size {
             text-align: center;
             .size-box {
-                margin: auto;
+                margin: 0 auto 0 auto;
                 padding-left: 1px;
             }
         }
         .cart-product-quantity {
-            input {
-                width: 30px;
+            text-align: center;
+            #quantity-counter {
+                margin: 0 auto 0 auto;
+                input {
+                    width: 30px;
+                    text-align: center;
+                }
             }
+           
         }
     }
 }

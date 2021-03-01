@@ -411,6 +411,7 @@ form.cart {
 form.cart table {
   width: 100%;
   border-spacing: 0;
+  margin-bottom: 20px;
 }
 form.cart table thead tr th {
   display: table-cell !important;
@@ -418,22 +419,30 @@ form.cart table thead tr th {
   line-height: 34px;
   border-bottom: 1px solid grey;
 }
+form.cart table th {
+  text-align: center;
+}
 form.cart table td {
   text-align: center;
   vertical-align: top;
   padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
 }
 form.cart table .cart-item {
   margin-top: 20px !important;
 }
 form.cart table .cart-product-name {
-  display: flex;
+  text-align: left;
 }
 form.cart table .cart-product-name img {
   max-width: 60px;
   margin-right: 10px;
 }
-form.cart table .cart-product-name p {
+form.cart table .cart-product-name div {
+  display: inline-block;
+}
+form.cart table .cart-product-name div p {
   margin-bottom: 5px;
 }
 form.cart table .cart-product-delete a img {
@@ -445,16 +454,24 @@ form.cart table .cart-product-color {
 form.cart table .cart-product-color .color-box {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
 }
 form.cart table .cart-product-size {
   text-align: center;
 }
 form.cart table .cart-product-size .size-box {
-  margin: auto;
+  margin: 0 auto 0 auto;
   padding-left: 1px;
 }
-form.cart table .cart-product-quantity input {
+form.cart table .cart-product-quantity {
+  text-align: center;
+}
+form.cart table .cart-product-quantity #quantity-counter {
+  margin: 0 auto 0 auto;
+}
+form.cart table .cart-product-quantity #quantity-counter input {
   width: 30px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

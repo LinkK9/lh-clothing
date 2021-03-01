@@ -41,7 +41,31 @@ block main
                         td.cart-product-quantity
                             #quantity-counter 
                                 button -
-                                input#quantity(type="number", name="")
+                                input#quantity(type="number", name="", value="1")
+                                button +
+                        td.cart-product-price
+                            .product-price 170.000đ
+                        td.cart-product-sumary 
+                            .sumary-of-quantity 170.000đ
+                        td.cart-product-delete 
+                            a.delete-item(href="#")
+                                img(src="image/icon/delete.svg", alt="", srcset="")
+                    
+                    tr.cart-item 
+                        td.cart-product-name
+                            img(src="image/nibegai.jpg", alt="", srcset="")
+                            div
+                                p.product-name Áo nỉ bé gái cổ tròn
+                                p.product-code Mã: 19000123-00
+                        td.cart-product-color 
+                            .color-box.pink.box
+                            .color-code Pink-007
+                        td.cart-product-size
+                            .size-box.box M
+                        td.cart-product-quantity
+                            #quantity-counter 
+                                button -
+                                input#quantity(type="number", name="", value="1")
                                 button +
                         td.cart-product-price
                             .product-price 170.000đ
