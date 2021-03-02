@@ -84,8 +84,9 @@ block main
                     input#quantity(type="number", name="quantity", value="1")
 
                 .submit-button.d-flex
-                    button(type="submit").add-cart THÊM VÀO GIỎ
-                    button(type="submit").payment THANH TOÁN NGAY
+                    //- a(href="shop-cart.html") 
+                    button(type="button", onclick="location.href='shop-cart.html'").add-cart THÊM VÀO GIỎ
+                    button(type="button").payment THANH TOÁN NGAY
                 .product-description
                     .descrip
                         h6 MÔ TẢ
