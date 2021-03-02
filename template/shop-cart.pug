@@ -15,6 +15,7 @@ block main
             li.breadcrumb-item.active(aria-current='page') Giỏ Hàng
 
     .cart-view.container
+        .shopcart-title THÔNG TIN GIỎ HÀNG
         form.cart
             table.cart-table 
                 thead
@@ -53,13 +54,13 @@ block main
                     
                     tr.cart-item 
                         td.cart-product-name
-                            img(src="image/nibegai.jpg", alt="", srcset="")
+                            img(src="image/3.jpg", alt="", srcset="")
                             div
                                 p.product-name Áo nỉ bé gái cổ tròn
-                                p.product-code Mã: 19000123-00
+                                p.product-code Mã: 19000321-03
                         td.cart-product-color 
                             .color-box.pink.box
-                            .color-code Pink-007
+                            .color-code Pink-201
                         td.cart-product-size
                             .size-box.box M
                         td.cart-product-quantity
@@ -74,4 +75,18 @@ block main
                         td.cart-product-delete 
                             a.delete-item(href="#")
                                 img(src="image/icon/delete.svg", alt="", srcset="")
+            table.table-sum.col-4
+                tbody
+                    tr.total-products 
+                        td Tổng số lượng
+                        td 2 Sản phẩm
+                    tr.sumary-estimate
+                        td Số tiền tạm tính
+                        td 340.000đ
+
+            .submit-button.d-flex.justify-content-end
+                button(type="submit").add-cart THÊM VÀO GIỎ
+                button(type="submit").payment THANH TOÁN NGAY
+                
+
                             

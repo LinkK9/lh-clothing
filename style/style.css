@@ -254,14 +254,6 @@ img {
 .sub-nav a {
   color: #fff;
 }
-.sub-nav .breadcrumb {
-  background-color: #454573;
-  border-radius: 0;
-}
-.sub-nav .breadcrumb .breadcrumb-item.active {
-  color: #c7c9ca;
-  font-size: 14px;
-}
 
 .product .product-main .product-box-image {
   width: 65%;
@@ -316,23 +308,6 @@ img {
   height: 24px;
   width: 24px;
   text-align: center;
-}
-.product .product-main form.product-info .submit-button {
-  width: 100%;
-  margin-top: 20px;
-  color: #fff;
-}
-.product .product-main form.product-info .submit-button button {
-  height: 30px;
-  color: #fff;
-  border: none;
-}
-.product .product-main form.product-info .submit-button .payment {
-  margin-left: 20px;
-  background-color: #ed5a6b;
-}
-.product .product-main form.product-info .submit-button .add-cart {
-  background-color: #454573;
 }
 .product .product-main form.product-info .product-description {
   margin-top: 20px;
@@ -396,6 +371,17 @@ img {
   background-color: green;
 }
 
+.breadcrumb {
+  background-color: #454573;
+  border-radius: 0;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: #c7c9ca;
+  font-size: 14px;
+  position: relative;
+  top: 3px;
+}
+
 .box {
   border: 1px solid black;
   width: 24px;
@@ -404,74 +390,118 @@ img {
   margin-right: 5px;
 }
 
+.submit-button {
+  width: 100%;
+  margin-top: 19px;
+  color: #fff;
+}
+.submit-button button {
+  height: 29px;
+  color: #fff;
+  border: none;
+}
+.submit-button .payment {
+  margin-left: 15px;
+  background-color: #ed5a6b;
+}
+.submit-button .add-cart {
+  background-color: #454573;
+}
+
+.shopcart-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: -15px;
+  margin-bottom: 20px;
+}
+
 form.cart {
   margin-left: -15px;
   margin-right: -15px;
+  margin-bottom: 90px;
 }
-form.cart table {
+form.cart table.cart-table {
   width: 100%;
   border-spacing: 0;
   margin-bottom: 20px;
 }
-form.cart table thead tr th {
-  display: table-cell !important;
+form.cart table.cart-table thead tr th {
+  display: table-cell;
   margin-bottom: 20px !important;
   line-height: 34px;
   border-bottom: 1px solid grey;
 }
-form.cart table th {
+form.cart table.cart-table th {
   text-align: center;
 }
-form.cart table td {
+form.cart table.cart-table td {
   text-align: center;
   vertical-align: top;
   padding-top: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid grey;
 }
-form.cart table .cart-item {
+form.cart table.cart-table .cart-item {
   margin-top: 20px !important;
 }
-form.cart table .cart-product-name {
+form.cart table.cart-table .cart-product-name {
   text-align: left;
 }
-form.cart table .cart-product-name img {
+form.cart table.cart-table .cart-product-name img {
   max-width: 60px;
   margin-right: 10px;
 }
-form.cart table .cart-product-name div {
+form.cart table.cart-table .cart-product-name div {
   display: inline-block;
 }
-form.cart table .cart-product-name div p {
+form.cart table.cart-table .cart-product-name div p {
   margin-bottom: 5px;
 }
-form.cart table .cart-product-delete a img {
+form.cart table.cart-table .cart-product-delete a img {
   width: 24px;
 }
-form.cart table .cart-product-color {
+form.cart table.cart-table .cart-product-color {
   text-align: center;
 }
-form.cart table .cart-product-color .color-box {
+form.cart table.cart-table .cart-product-color .color-box {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
 }
-form.cart table .cart-product-size {
+form.cart table.cart-table .cart-product-size {
   text-align: center;
 }
-form.cart table .cart-product-size .size-box {
+form.cart table.cart-table .cart-product-size .size-box {
   margin: 0 auto 0 auto;
   padding-left: 1px;
 }
-form.cart table .cart-product-quantity {
+form.cart table.cart-table .cart-product-quantity {
   text-align: center;
 }
-form.cart table .cart-product-quantity #quantity-counter {
+form.cart table.cart-table .cart-product-quantity #quantity-counter {
   margin: 0 auto 0 auto;
 }
-form.cart table .cart-product-quantity #quantity-counter input {
+form.cart table.cart-table .cart-product-quantity #quantity-counter input {
   width: 30px;
   text-align: center;
+}
+form.cart .table-sum {
+  margin-left: auto;
+}
+form.cart .table-sum td:last-child {
+  text-align: right;
+}
+form.cart .table-sum .sumary-estimate {
+  font-weight: bold;
+}
+form.cart .table-sum .sumary-estimate td {
+  padding-top: 10px;
+  border-top: 1px solid grey;
+}
+@media (max-width: 479px) {
+  form.cart {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

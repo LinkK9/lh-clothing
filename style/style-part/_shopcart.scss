@@ -1,17 +1,24 @@
 
 
 // scss
+.shopcart-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -15px;
+    margin-bottom: 20px;
+}
 form.cart {
     margin-left: -15px;
     margin-right: -15px;
-    table {
+    margin-bottom: 90px;
+    table.cart-table {
         width: 100%;
         border-spacing: 0;
         margin-bottom: 20px;
         thead {
             tr {
                 th {
-                    display: table-cell !important;
+                    display: table-cell ;
                     margin-bottom: 20px !important;
                     line-height: 34px;
                     border-bottom: 1px solid grey;
@@ -79,4 +86,35 @@ form.cart {
            
         }
     }
+
+    .table-sum {
+        margin-left: auto;
+        td:last-child {
+            text-align: right;
+        }
+        .sumary-estimate {
+            font-weight: bold;
+            td {
+                padding-top: 10px;
+                border-top: 1px solid grey;
+            }
+            
+        }
+    }
+
+
+    // responsive
+    @include mobile {
+        font-size: 12px;
+        th {
+            // display: none !important;
+        }
+
+
+        tbody {
+            // display: block;
+
+        }
+    }
+    
 }
