@@ -45,8 +45,8 @@ header nav .navbar-brand img {
     margin: 0 !important;
   }
   header nav #navbarSupportedContent.collapse.navbar-collapse form input {
-    width: 90%;
-    margin-right: 3px;
+    width: 85%;
+    margin-right: 5px;
   }
   header nav #navbarSupportedContent.collapse.navbar-collapse .icons {
     display: flex;
