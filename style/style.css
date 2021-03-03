@@ -40,29 +40,29 @@ header nav .navbar-brand img {
   height: 60px;
   width: auto;
 }
-@media (max-width: 479px) {
-  header nav #navbarSupportedContent.collapse.navbar-collapse form {
-    margin: 0 !important;
-  }
-  header nav #navbarSupportedContent.collapse.navbar-collapse form input {
-    width: 85%;
-    margin-right: 5px;
-  }
-  header nav #navbarSupportedContent.collapse.navbar-collapse .icons {
-    display: flex;
-  }
+header nav .icons a {
+  margin-left: 20px;
 }
-header nav #navbarSupportedContent.collapse.navbar-collapse form button {
+header nav .icons a img {
+  width: 20px;
+}
+header nav form button {
   border: none;
   background-color: inherit;
   padding: 0;
   width: 20px;
 }
-header nav #navbarSupportedContent.collapse.navbar-collapse .icons a {
-  margin-left: 20px;
-}
-header nav #navbarSupportedContent.collapse.navbar-collapse .icons a img {
-  width: 20px;
+@media (max-width: 479px) {
+  header nav form {
+    margin: 0 !important;
+  }
+  header nav form input {
+    width: 85% !important;
+    margin-right: 5px;
+  }
+  header nav .icons {
+    display: flex;
+  }
 }
 
 footer p {
