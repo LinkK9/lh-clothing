@@ -16,7 +16,7 @@ block main
     
     .order-view.container
         .order-title.shopcart-title THÔNG TIN ĐẶT HÀNG
-        form.order-info.d-flex 
+        form.order-info.d-flex.flex-wrap
             .order-address.col-md-6.col 
                 .order-address-title 1. Địa chỉ nhận hàng
                 .order-input 
@@ -49,4 +49,44 @@ block main
                     .ship-title 2. Vận chuyển
                     .ship-info.d-flex.justify-content-between 
                         .ship-label Phí vận chuyển
-                        .ship-money 0đ  
+                        .ship-money 0đ
+                .order-code
+                    .code-title 3. Mã giảm giá
+                    form.code-form
+                        input(type="number", placeholder="Điền mã giảm giá nếu có")
+                        button(type="submit") Sử dụng
+                .pay-method 
+                    .pay-label 4. Phương thức thanh toán
+                    form(action="")
+                        .methods
+                            input#credit(type="radio", name="paymentMethod")
+                            label(for="credit") Thanh toán qua thẻ tín dụng
+                        .methods
+                            input#atm-card(type="radio", name="paymentMethod")
+                            label(for="atm-card") Thanh toán qua thẻ ATM
+                        .methods
+                            input#cash(type="radio", name="paymentMethod") 
+                            label(for="cash") Thanh toán khi nhận hàng
+                
+                .oder-sum 
+                    .sum-label 5. Tổng cộng
+                    .sum-info 
+                        table.sum-table
+                            tbody
+                                tr
+                                    td Tổng giá bán
+                                    td 340.000đ
+                                tr 
+                                    td Vận chuyển
+                                    td 0đ
+                                tr 
+                                    td Giảm giá
+                                    td 0đ
+                            tfoot 
+                                tr 
+                                    td Tổng cộng
+                                    td 340.000đ
+
+                        .submit-button
+                            button(type="submit") Đặt hàng
+

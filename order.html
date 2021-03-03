@@ -65,7 +65,7 @@
     </nav>
     <div class="order-view container">
       <div class="order-title shopcart-title">THÔNG TIN ĐẶT HÀNG</div>
-      <form class="order-info d-flex"> 
+      <form class="order-info d-flex flex-wrap">
         <div class="order-address col-md-6 col"> 
           <div class="order-address-title">1. Địa chỉ nhận hàng</div>
           <div class="order-input"> 
@@ -107,7 +107,61 @@
             <div class="ship-title">2. Vận chuyển</div>
             <div class="ship-info d-flex justify-content-between"> 
               <div class="ship-label">Phí vận chuyển</div>
-              <div class="ship-money">0đ  </div>
+              <div class="ship-money">0đ</div>
+            </div>
+          </div>
+          <div class="order-code">
+            <div class="code-title">3. Mã giảm giá</div>
+            <form class="code-form">
+              <input type="number" placeholder="Điền mã giảm giá nếu có">
+              <button type="submit">Sử dụng</button>
+            </form>
+          </div>
+          <div class="pay-method"> 
+            <div class="pay-label">4. Phương thức thanh toán</div>
+            <form action="">
+              <div class="methods">
+                <input id="credit" type="radio" name="paymentMethod">
+                <label for="credit">Thanh toán qua thẻ tín dụng</label>
+              </div>
+              <div class="methods">
+                <input id="atm-card" type="radio" name="paymentMethod">
+                <label for="atm-card">Thanh toán qua thẻ ATM</label>
+              </div>
+              <div class="methods">
+                <input id="cash" type="radio" name="paymentMethod">
+                <label for="cash">Thanh toán khi nhận hàng</label>
+              </div>
+            </form>
+          </div>
+          <div class="oder-sum"> 
+            <div class="sum-label">5. Tổng cộng</div>
+            <div class="sum-info"> 
+              <table class="sum-table">
+                <tbody>
+                  <tr>
+                    <td>Tổng giá bán</td>
+                    <td>340.000đ</td>
+                  </tr>
+                  <tr> 
+                    <td>Vận chuyển</td>
+                    <td>0đ</td>
+                  </tr>
+                  <tr> 
+                    <td>Giảm giá</td>
+                    <td>0đ</td>
+                  </tr>
+                </tbody>
+                <tfoot> 
+                  <tr> 
+                    <td>Tổng cộng</td>
+                    <td>340.000đ</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <div class="submit-button">
+                <button type="submit">Đặt hàng</button>
+              </div>
             </div>
           </div>
         </div>
