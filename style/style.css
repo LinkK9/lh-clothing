@@ -106,6 +106,7 @@ footer .sub-email button {
 @media (max-width: 479px) {
   footer .sub-email {
     display: block !important;
+    font-size: 12px;
   }
   footer .sub-email .sub-title {
     margin-bottom: 10px;
@@ -124,11 +125,22 @@ main .banner {
   padding-right: 0;
   margin-bottom: 30px;
 }
+@media (max-width: 479px) {
+  main .banner {
+    margin-bottom: 15px;
+  }
+}
 main .new-products,
 main .sale-products {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 30px;
+}
+@media (max-width: 479px) {
+  main .new-products,
+main .sale-products {
+    margin-bottom: 0px;
+  }
 }
 main .new-products .head-nav,
 main .sale-products .head-nav {
@@ -159,16 +171,22 @@ main .sale-products .head-nav .head-title {
   main .new-products .head-nav,
 main .sale-products .head-nav {
     flex-direction: column;
+    font-size: 14px;
+    height: 40px;
   }
   main .new-products .head-nav .head-title,
 main .sale-products .head-nav .head-title {
     position: relative;
-    top: 8px;
+    top: 2px;
     align-self: flex-start;
   }
   main .new-products .head-nav .head-menu-list,
 main .sale-products .head-nav .head-menu-list {
     width: 100%;
+  }
+  main .new-products .head-nav .head-menu-list a,
+main .sale-products .head-nav .head-menu-list a {
+    font-size: 12px;
   }
   main .new-products .head-nav .read-more,
 main .sale-products .head-nav .read-more {
@@ -188,6 +206,7 @@ main .sale-products .products-grid {
   main .new-products .products-grid,
 main .sale-products .products-grid {
     margin: 0;
+    font-size: 12px;
   }
 }
 main .new-products .products-grid .box-item,
@@ -229,6 +248,9 @@ main .service {
 @media (max-width: 479px) {
   main .service {
     margin-left: 10px;
+  }
+  main .service .service-title {
+    font-size: 14px !important;
   }
 }
 main .service .service-title {
@@ -414,6 +436,13 @@ img {
   margin-left: -15px;
   margin-bottom: 20px;
 }
+@media (max-width: 479px) {
+  .shopcart-title {
+    margin-left: -5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
 
 form.cart {
   margin-left: -15px;
@@ -495,12 +524,52 @@ form.cart .table-sum .sumary-estimate {
   font-weight: bold;
 }
 form.cart .table-sum .sumary-estimate td {
-  padding-top: 10px;
+  padding-top: 5px;
   border-top: 1px solid grey;
 }
 @media (max-width: 479px) {
   form.cart {
-    font-size: 12px;
+    font-size: 10px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 30px;
+  }
+  form.cart .cart-table {
+    margin-bottom: 10px !important;
+  }
+  form.cart .cart-table th {
+    line-height: 14px !important;
+  }
+  form.cart .cart-table td {
+    padding-top: 5px !important;
+  }
+  form.cart .cart-table tbody p, form.cart .cart-table tbody .color-code, form.cart .cart-table tbody #quantity-counter button {
+    display: none;
+  }
+  form.cart .cart-table tbody .cart-product-name img {
+    margin: 0 !important;
+  }
+  form.cart .cart-table tbody .cart-product-size {
+    font-weight: bold;
+  }
+  form.cart .cart-table tbody .cart-product-size .box {
+    border: none;
+    padding-top: 3px;
+  }
+  form.cart .cart-table tbody .cart-product-quantity input {
+    width: 24px !important;
+  }
+  form.cart .cart-table tbody .product-price, form.cart .cart-table tbody .sumary-of-quantity {
+    padding-top: 3px;
+  }
+  form.cart .cart-table tbody .cart-product-delete img {
+    width: 14px !important;
+  }
+  form.cart .table-sum {
+    max-width: 50% !important;
+  }
+  form.cart .submit-button {
+    max-width: 100%;
   }
 }
 

@@ -6,6 +6,11 @@
     font-weight: bold;
     margin-left: -15px;
     margin-bottom: 20px;
+    @include mobile {
+        margin-left: -5px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 }
 form.cart {
     margin-left: -15px;
@@ -95,7 +100,7 @@ form.cart {
         .sumary-estimate {
             font-weight: bold;
             td {
-                padding-top: 10px;
+                padding-top: 5px;
                 border-top: 1px solid grey;
             }
             
@@ -105,15 +110,65 @@ form.cart {
 
     // responsive
     @include mobile {
-        font-size: 12px;
-        th {
-            // display: none !important;
+        font-size: 10px;
+        margin-left: -5px;
+        margin-right: -5px;
+        margin-bottom: 30px;
+        .cart-table {
+            margin-bottom: 10px !important;
+            th {
+                // display: none !important;
+                line-height: 14px !important;
+            }
+            td {
+                padding-top: 5px !important;
+            }
+    
+    
+            tbody {
+                p, .color-code, #quantity-counter button {
+                    display: none;
+                }
+                .cart-product-name {
+                    img {
+                        margin: 0 !important;
+                    }
+                }
+                .cart-product-size {
+                    font-weight: bold;
+                    .box {
+                        border: none; 
+                        padding-top: 3px;
+                    }
+                }
+                .cart-product-quantity {
+                    input {
+                        width: 24px !important;
+                    }
+                }
+
+                .product-price, .sumary-of-quantity {
+                    padding-top: 3px;
+                }
+
+                .cart-product-delete {
+                    img {
+                        width: 14px !important;
+                    }
+                }
+    
+            }
+        }
+        
+
+        .table-sum {
+            
+            max-width: 50% !important;
+        
         }
 
-
-        tbody {
-            // display: block;
-
+        .submit-button {
+            max-width: 100%;
         }
     }
     

@@ -122,6 +122,7 @@ footer {
     }
     @include mobile {
       display: block !important;
+      font-size: 12px;
       .sub-title {
         margin-bottom: 10px;
       }
