@@ -16,8 +16,8 @@ block main
     
     .order-view.container
         .order-title.shopcart-title THÔNG TIN ĐẶT HÀNG
-        form.order-info 
-            .order-address 
+        form.order-info.d-flex 
+            .order-address.col-md-6.col 
                 .order-address-title 1. Địa chỉ nhận hàng
                 .order-input 
                     label(for="customer-name") Họ và Tên
@@ -28,3 +28,25 @@ block main
                 .order-input 
                     label(for="customer-phone") Số điện thoại
                     input#customer-name(type="number", name="customer-phone", placeholder="Sđt")
+                .order-input 
+                    label(for="customer-province") Tỉnh / Thành phố
+                    select(name='calc_shipping_provinces' required='')#customer-province
+                        option(value='') Tỉnh / Thành phố
+                    input.billing_address_1(name='' type='hidden' value='')
+                .order-input 
+                    label(for="customer-district") Quận / Huyện
+                    select(name='calc_shipping_district' required='')#customer-district
+                        option(value='') Quận / Huyện
+                    input.billing_address_2(name='' type='hidden' value='')
+                .order-input 
+                    label(for="customer-sub-district") Phường / Xã
+                    select(name='calc_shipping_sub_district' required='')#customer-sub-district
+                        option(value='') Phường / Xã
+                    input.billing_address_3(name='' type='hidden' value='')
+            
+            .order-ship-pay-sum.col-md-6-col
+                .order-ship
+                    .ship-title 2. Vận chuyển
+                    .ship-info.d-flex.justify-content-between 
+                        .ship-label Phí vận chuyển
+                        .ship-money 0đ

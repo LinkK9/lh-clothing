@@ -1,0 +1,18 @@
+
+
+// Scss
+
+.order-view {
+    .order-info {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .order-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        label {
+            margin-bottom: 5px;
+        }
+    }
+}

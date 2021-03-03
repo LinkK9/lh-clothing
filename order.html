@@ -65,8 +65,8 @@
     </nav>
     <div class="order-view container">
       <div class="order-title shopcart-title">THÔNG TIN ĐẶT HÀNG</div>
-      <form class="order-info"> 
-        <div class="order-address"> 
+      <form class="order-info d-flex"> 
+        <div class="order-address col-md-6 col"> 
           <div class="order-address-title">1. Địa chỉ nhận hàng</div>
           <div class="order-input"> 
             <label for="customer-name">Họ và Tên</label>
@@ -79,6 +79,36 @@
           <div class="order-input"> 
             <label for="customer-phone">Số điện thoại</label>
             <input id="customer-name" type="number" name="customer-phone" placeholder="Sđt">
+          </div>
+          <div class="order-input"> 
+            <label for="customer-province">Tỉnh / Thành phố</label>
+            <select name="calc_shipping_provinces" required="" id="customer-province">
+              <option value="">Tỉnh / Thành phố</option>
+            </select>
+            <input class="billing_address_1" name="" type="hidden" value="">
+          </div>
+          <div class="order-input"> 
+            <label for="customer-district">Quận / Huyện</label>
+            <select name="calc_shipping_district" required="" id="customer-district">
+              <option value="">Quận / Huyện</option>
+            </select>
+            <input class="billing_address_2" name="" type="hidden" value="">
+          </div>
+          <div class="order-input"> 
+            <label for="customer-sub-district">Phường / Xã</label>
+            <select name="calc_shipping_sub_district" required="" id="customer-sub-district">
+              <option value="">Phường / Xã</option>
+            </select>
+            <input class="billing_address_3" name="" type="hidden" value="">
+          </div>
+        </div>
+        <div class="order-ship-pay-sum col-md-6-col">
+          <div class="order-ship">
+            <div class="ship-title">2. Vận chuyển</div>
+            <div class="ship-info d-flex justify-content-between"> 
+              <div class="ship-label">Phí vận chuyển</div>
+              <div class="ship-money">0đ</div>
+            </div>
           </div>
         </div>
       </form>
