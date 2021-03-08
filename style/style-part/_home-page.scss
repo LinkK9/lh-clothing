@@ -81,6 +81,9 @@ main {
               padding: 5px;
             }
           }
+          .box-title {
+            text-align: center;
+          }
           .box-price {
             font-weight: bold;
             .old-price{
@@ -97,13 +100,12 @@ main {
       .products-grid {
         .box-item {
           .box-title {
-            justify-content: center !important;
-            text-align: center;
+            justify-content: center !important; 
           }
           .box-price {
             justify-content: center !important;
           }
-        }
+        }  
       }
     }
     .service {

@@ -223,6 +223,10 @@ main .sale-products .products-grid .box-item .box-image .box-tag {
   color: #fff;
   padding: 5px;
 }
+main .new-products .products-grid .box-item .box-title,
+main .sale-products .products-grid .box-item .box-title {
+  text-align: center;
+}
 main .new-products .products-grid .box-item .box-price,
 main .sale-products .products-grid .box-item .box-price {
   font-weight: bold;
@@ -236,7 +240,6 @@ main .sale-products .products-grid .box-item .box-price .old-price {
 }
 main .new-products .products-grid .box-item .box-title {
   justify-content: center !important;
-  text-align: center;
 }
 main .new-products .products-grid .box-item .box-price {
   justify-content: center !important;

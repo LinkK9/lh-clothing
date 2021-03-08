@@ -1,0 +1,28 @@
+//- Extends
+extends template-part/layout.pug
+
+//- Pug
+block title
+  title LH Clothing
+block link
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    link(rel="stylesheet", href="style/style.css")
+block main
+    nav(aria-label='breadcrumb').container.sub-nav
+        ol.breadcrumb
+            li.breadcrumb-item
+                a(href='index.html') Trang chủ
+            li.breadcrumb-item
+                a(href='index.html') Bé gái
+            li.breadcrumb-item.active(aria-current='page') Danh mục sản phẩm 
+    
+    .directory.container
+        .directory.view 
+            .list-col
+                
+            .products-view 
+                .directory-head 
+                    .directory-title 
+                    .directory-sort
+                .products-grid.col-md-4.col-6
+                .page-switch
