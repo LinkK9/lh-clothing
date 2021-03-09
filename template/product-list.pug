@@ -1,6 +1,40 @@
 //- Extends
 extends template-part/layout.pug
 
+//- Mixxins
+mixin list-col-item(title, target, id, linksp, show)
+    .list-col-item.d-block
+        a(href="#" data-toggle="collapse" data-target=target).font-weight-bold=title
+            ul(id=id class=show).collapse
+                li.new-arrival.font-weight-bold 
+                    a(href=linksp) SẢN PHẨM MỚI
+                li.shirts(data-toggle="collapse" data-target="#shirt-item").font-weight-bold 
+                    a(href="#") ÁO
+                    ul#shirt-item.collapse.font-weight-normal
+                        li
+                            a(href=linksp) Áo phông
+                        li 
+                            a(href=linksp) Áo nỉ
+                        li
+                            a(href=linksp) Áo len
+                        li
+                            a(href=linksp) Áo sơ mi
+                        li
+                            a(href=linksp) Áo khoác
+                li.pants(data-toggle="collapse" data-target="#pant-item").font-weight-bold 
+                    a(href="#") QUẦN
+                    ul#pant-item.collapse.font-weight-normal  
+                        li
+                            a(href=linksp) Quần jeans
+                        li
+                            a(href=linksp) Quần vải
+                        li
+                            a(href=linksp) Quần kaki 
+                        li
+                            a(href=linksp) Quần short
+                li.accessories.font-weight-bold 
+                    a(href="#") PHỤ KIỆN KHÁC
+
 //- Pug
 block title
   title LH Clothing
@@ -19,7 +53,11 @@ block main
     .directory.container
         .directory.view 
             .list-col
-                
+                +list-col-item("NAM", "#nam-products", "nam-products", "product-list.html")
+                +list-col-item("NỮ", "#nu-products", "nu-products", "product-list.html")
+                +list-col-item("BÉ GÁI", "#begai-products", "begai-products", "product-list.html", "show")
+                +list-col-item("BÉ TRAI", "#betrai-products", "betrai-products", "product-list.html")
+
             .products-view 
                 .directory-head 
                     .directory-title 
