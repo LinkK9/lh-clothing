@@ -1,0 +1,17 @@
+// Scss
+
+.directory-view {
+    margin: 0 -15px 0 -15px;
+
+    .list-col {
+        width: 15%;
+    }
+
+    .products-view {
+        width: 85%;
+
+        .products-grid {
+            margin: 20px -15px 0 -15px;  
+        }
+    }
+}

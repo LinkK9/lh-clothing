@@ -12,15 +12,18 @@ body {
 }
 p,
 a {
-  font-size: 14px;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
   @include mobile {
     font-size: 12px;
   }
 }
-a {
-  color: #000;
+a:hover {
   text-decoration: none;
+  color: $primary-color;
 }
+
 img {
   width: 100%;
 }
@@ -31,6 +34,27 @@ ul {
   }
 }
 
+.btn-1 {
+  background-color: $primary-color !important;
+  color: #fff;
+  border: none;
+  padding: 4px 10px 4px 10px;
+}
+.btn-1:hover {
+  background-color: $secondary-color !important;
+  transition: 0.15s;
+}
+
+.btn-2 {
+  background-color: $secondary-color !important;
+  color: #fff;
+  border: none;
+  padding: 4px 10px 4px 10px;
+}
+.btn-2:hover {
+  background-color: $primary-color !important;
+  transition: 0.15s;
+}
 header {
   background-color: $background-nav;
   nav {
@@ -71,7 +95,6 @@ header {
         }
       }
 
-    
   }
 }
 
@@ -116,7 +139,10 @@ footer {
     }
     input {
       width: 390px;
+      height: 24px;
       margin-right: 5px;
+      margin-bottom: 0 !important;
+      box-sizing: content-box;
     }
     button {
       background-color: inherit;
@@ -128,13 +154,11 @@ footer {
         margin-bottom: 10px;
       }
       input {
-        width: 100%;
+        width: 70%;
         margin-bottom: 5px;
       }
     }
   }
 }
 
-@import "style-part/_home-page.scss";
-@import "style-part/_products-detail.scss";
-@import "style-part/_shopcart.scss", "style-part/_order.scss" ;
+@import "style-part/_home-page.scss","style-part/_products-detail.scss","style-part/_shopcart.scss", "style-part/_order.scss", "style-part/_product-list.scss" ;
