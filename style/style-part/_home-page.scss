@@ -3,9 +3,9 @@ main {
     .banner {
       padding-left: 0;
       padding-right: 0;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       @include mobile {
-        margin-bottom: 15px;
+        margin-bottom: 0px;
       }
     }
     .new-products,
@@ -22,7 +22,7 @@ main {
         text-transform: uppercase;
         color: #fce36f;
         font-weight: bold;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
         padding-left: 15px;
         padding-right: 15px;
         a {
@@ -66,6 +66,7 @@ main {
         margin-right: -5px;
         @include mobile {
             margin: 0;
+            padding: 0 10px 0 10px;
             font-size: 12px;
         }
         .box-item {
@@ -124,5 +125,19 @@ main {
         margin-bottom: 5px;
       }
     }
+    @include mobile {
+      margin-top: 0;
+    }
   }
 
+// Need refactor
+
+.box-image {
+  margin-bottom: 10px;
+}
+
+.nav-sale {
+  @include mobile {
+    margin-top: 0px !important;
+  }
+}

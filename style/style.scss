@@ -8,12 +8,19 @@ $secondary-color: #454573;
 
 // Scss
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #454573;
+  @include mobile {
+    font-size: 12px;
+  }
 }
 p,
 a {
   font-size: 16px;
-  color: #000;
+  color: $secondary-color;
   text-decoration: none;
   @include mobile {
     font-size: 12px;
@@ -38,7 +45,7 @@ ul {
   background-color: $primary-color !important;
   color: #fff;
   border: none;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 8px 4px 8px;
 }
 .btn-1:hover {
   background-color: $secondary-color !important;
@@ -49,7 +56,7 @@ ul {
   background-color: $secondary-color !important;
   color: #fff;
   border: none;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 8px 4px 8px;
 }
 .btn-2:hover {
   background-color: $primary-color !important;
@@ -154,7 +161,7 @@ footer {
         margin-bottom: 10px;
       }
       input {
-        width: 70%;
+        width: 75%;
         margin-bottom: 5px;
       }
     }

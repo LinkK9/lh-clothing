@@ -38,10 +38,11 @@ img {
     form.product-info {
       width: 100%;
       margin-left: 60px;
-      font-size: 12px;
+      font-size: 16px;
+      color: $secondary-color;
       .product-title {
         h1 {
-          font-size: 16px;
+          font-size: 18px;
           font-weight: bold;
           line-height: 20px;
         }
@@ -162,9 +163,6 @@ img {
   border-radius: 0;
   .breadcrumb-item.active {
     color: #c7c9ca;
-    font-size: 14px;
-    position: relative;
-    top: 3px;
   }
 }
 .box {

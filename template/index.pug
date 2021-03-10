@@ -19,18 +19,18 @@ block title
 block main 
   #carouselExampleControls.carousel.slide(data-ride='carousel').container.banner
       .carousel-inner
-            .carousel-item.active
-              img.d-block.w-100(src='image/couple-tx-trẻ-em-676x390.jpg' alt='...')
-            .carousel-item
+            a(href="product-list.html").carousel-item.active
+              img.d-block.w-100(src='image/banner-listing-jean-kid.jpg' alt='...')
+            a(href="product-list.html").carousel-item
+              img.d-block.w-100(src='image/quan-jeans-new-listing.jpg' alt='...')
+            a(href="product-list.html").carousel-item
               img.d-block.w-100(src='image/chuc-mung-nam-moi-tan-suu-home.jpg' alt='...')
-            .carousel-item
-              img.d-block.w-100(src='image/couple-tx-nam-676x390.jpg' alt='...')
+            a(href="product-list.html").carousel-item
+              img.d-block.w-100(src='image/ao-khoac-gio-tre-em-banner-listing.jpg' alt='...')
       a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
             span.carousel-control-prev-icon(aria-hidden='true')
-            span.sr-only Previous
       a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
             span.carousel-control-next-icon(aria-hidden='true')
-            span.sr-only Next
             
   .new-products.container 
     .head-nav.d-flex.justify-content-between.align-items-center
@@ -41,9 +41,9 @@ block main
         li 
           a(href="product-list.html") nữ
         li 
-          a(href="product-list.html") bé trai
-        li 
           a(href="product-list.html") bé gái
+        li 
+          a(href="product-list.html") bé trai
       a(href="product-list.html").read-more tất cả         
     .products-grid.d-flex.flex-wrap 
       +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000đ", "NEW")
@@ -62,9 +62,9 @@ block main
         li 
           a(href="product-list.html") nữ
         li 
-          a(href="product-list.html") bé trai
-        li 
           a(href="product-list.html") bé gái
+        li 
+          a(href="product-list.html") bé trai
       a(href="product-list.html").read-more tất cả         
     .products-grid.d-flex.flex-wrap 
       +box-item('image/ao khoac gio nam.jpg', "Áo khoác gió nam", "250.000đ", "50%", "500.000đ")

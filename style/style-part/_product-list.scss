@@ -5,13 +5,38 @@
 
     .list-col {
         width: 15%;
+        li a{
+            font-size: 12.5px !important;
+        }
+        .list-col-item {
+            margin-bottom: 20px;
+        }
+        @include mobile {
+            display: none;
+        }
     }
 
     .products-view {
         width: 85%;
-
         .products-grid {
             margin: 20px -15px 0 -15px;  
+        }
+        .box-item {
+            margin-bottom: 20px;
+        }
+        @include mobile {
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+            .products-grid {
+                margin: 15px 0px 0 0px;
+            }
+
+            .box-item {
+                margin-bottom: 20px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
         }
     }
 }

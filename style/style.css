@@ -1,12 +1,21 @@
 /* Mixin */
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #454573;
+}
+@media (max-width: 479px) {
+  body {
+    font-size: 12px;
+  }
 }
 
 p,
 a {
   font-size: 16px;
-  color: #000;
+  color: #454573;
   text-decoration: none;
 }
 @media (max-width: 479px) {
@@ -36,7 +45,7 @@ ul li {
   background-color: #ed5a6b !important;
   color: #fff;
   border: none;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 8px 4px 8px;
 }
 
 .btn-1:hover {
@@ -48,7 +57,7 @@ ul li {
   background-color: #454573 !important;
   color: #fff;
   border: none;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 8px 4px 8px;
 }
 
 .btn-2:hover {
@@ -141,7 +150,7 @@ footer .sub-email button {
     margin-bottom: 10px;
   }
   footer .sub-email input {
-    width: 70%;
+    width: 75%;
     margin-bottom: 5px;
   }
 }
@@ -152,11 +161,11 @@ main {
 main .banner {
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 @media (max-width: 479px) {
   main .banner {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
 }
 main .new-products,
@@ -178,7 +187,7 @@ main .sale-products .head-nav {
   text-transform: uppercase;
   color: #fce36f;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -235,6 +244,7 @@ main .sale-products .products-grid {
   main .new-products .products-grid,
 main .sale-products .products-grid {
     margin: 0;
+    padding: 0 10px 0 10px;
     font-size: 12px;
   }
 }
@@ -291,6 +301,21 @@ main .service .service-title {
   font-weight: bold;
   margin-bottom: 5px;
 }
+@media (max-width: 479px) {
+  main {
+    margin-top: 0;
+  }
+}
+
+.box-image {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 479px) {
+  .nav-sale {
+    margin-top: 0px !important;
+  }
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -326,10 +351,11 @@ img {
 .product .product-main form.product-info {
   width: 100%;
   margin-left: 60px;
-  font-size: 12px;
+  font-size: 16px;
+  color: #454573;
 }
 .product .product-main form.product-info .product-title h1 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 20px;
 }
@@ -431,9 +457,6 @@ img {
 }
 .breadcrumb .breadcrumb-item.active {
   color: #c7c9ca;
-  font-size: 14px;
-  position: relative;
-  top: 3px;
 }
 
 .box {
@@ -614,11 +637,40 @@ form.cart .table-sum .sumary-estimate td {
 .directory-view .list-col {
   width: 15%;
 }
+.directory-view .list-col li a {
+  font-size: 12.5px !important;
+}
+.directory-view .list-col .list-col-item {
+  margin-bottom: 20px;
+}
+@media (max-width: 479px) {
+  .directory-view .list-col {
+    display: none;
+  }
+}
 .directory-view .products-view {
   width: 85%;
 }
 .directory-view .products-view .products-grid {
   margin: 20px -15px 0 -15px;
+}
+.directory-view .products-view .box-item {
+  margin-bottom: 20px;
+}
+@media (max-width: 479px) {
+  .directory-view .products-view {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  .directory-view .products-view .products-grid {
+    margin: 15px 0px 0 0px;
+  }
+  .directory-view .products-view .box-item {
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
