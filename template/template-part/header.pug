@@ -37,10 +37,10 @@ header.container
                 +menu-link('BÉ GÁI')
                 +menu-link('BÉ TRAI')
             
-            .search-cart.d-flex.align-items-center
-                form.form-inline.my-2.my-lg-0.ml-auto.d-flex
-                    input.form-control.mr-sm-2(type='search' placeholder='Tìm kiếm' aria-label='Search')
-                    button(type='submit')
+            .search-cart.d-flex.align-items-center.justify-content-end
+                form.form-inline.my-2.my-lg-0.d-flex.flex-nowrap
+                    input.form-control(type='search' placeholder='Tìm kiếm' aria-label='Search')#Search
+                    button(type='submit').loupe
                         img(src="image/icon/loupe.svg", alt="", srcset="")
                 .icons
                     a.icon-topbar(href="#")

@@ -25,8 +25,8 @@ block main
                         th.cart-product-size Size
                         th.cart-product-quantity Sl
                         th.cart-product-price Giá
-                        th.cart-product-sumary Thành tiền
-                        th.cart-product-delete Xóa
+                        th.cart-product-sumary.text-right Thành tiền
+                        //- th.cart-product-delete Xóa
                 tbody 
                     tr.cart-item 
                         td.cart-product-name
@@ -38,19 +38,20 @@ block main
                             .color-box.pink.box
                             .color-code Pink-007
                         td.cart-product-size
-                            .size-box.box M
+                            .size-box.font-weight-bold M
                         td.cart-product-quantity
                             #quantity-counter 
-                                button -
+                                //- button -
                                 input#quantity(type="number", name="", value="1")
-                                button +
+                                //- button +
                         td.cart-product-price
                             .product-price 170.000đ
-                        td.cart-product-sumary 
+                        td.cart-product-sumary.text-right 
                             .sumary-of-quantity 170.000đ
-                        td.cart-product-delete 
-                            a.delete-item(href="#")
-                                img(src="image/icon/delete.svg", alt="", srcset="")
+                            a(href="#").delete-item  Xóa
+                        //- td.cart-product-delete 
+                        //-     a.delete-item(href="#")
+                        //-         img(src="image/icon/delete.svg", alt="", srcset="")
                     
                     tr.cart-item 
                         td.cart-product-name
@@ -62,19 +63,20 @@ block main
                             .color-box.pink.box
                             .color-code Pink-201
                         td.cart-product-size
-                            .size-box.box M
+                            .size-box.font-weight-bold M
                         td.cart-product-quantity
                             #quantity-counter 
-                                button -
+                                //- button -
                                 input#quantity(type="number", name="", value="1")
-                                button +
+                                //- button +
                         td.cart-product-price
                             .product-price 170.000đ
-                        td.cart-product-sumary 
+                        td.cart-product-sumary.text-right
                             .sumary-of-quantity 170.000đ
-                        td.cart-product-delete 
-                            a.delete-item(href="#")
-                                img(src="image/icon/delete.svg", alt="", srcset="")
+                            a(href="#").delete-item  Xóa
+                        //- td.cart-product-delete 
+                        //-     a.delete-item(href="#")
+                        //-         img(src="image/icon/delete.svg", alt="", srcset="")
             table.table-sum.col-4
                 tbody
                     tr.total-products 

@@ -79,6 +79,11 @@ form.cart {
                 padding-left: 1px;
             }
         }
+        a.delete-item {
+            
+            color: red;
+            
+        }
         .cart-product-quantity {
             text-align: center;
             #quantity-counter {

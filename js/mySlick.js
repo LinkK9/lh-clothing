@@ -4,7 +4,8 @@
   arrows: false,
   fade: true,
   dots: true,
-  asNavFor: '.slider-nav'
+  asNavFor: '.slider-nav',
+  swapToSlide: true
 });
 $('.slider-nav').slick({
   slidesToShow: 3,
