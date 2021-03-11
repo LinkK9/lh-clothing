@@ -80,9 +80,11 @@ form.cart {
             }
         }
         a.delete-item {
-            
             color: red;
-            
+        }
+        a.delete-item:hover {
+            color: rgb(153, 0, 0);
+            transition: 0.15s;
         }
         .cart-product-quantity {
             text-align: center;

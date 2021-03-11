@@ -37,14 +37,15 @@ header.container
                 +menu-link('BÉ GÁI')
                 +menu-link('BÉ TRAI')
             
-            .search-cart.d-flex.align-items-center.justify-content-end
+            .search-cart.d-flex.align-items-center.justify-content-between
                 form.form-inline.my-2.my-lg-0.d-flex.flex-nowrap
                     input.form-control(type='search' placeholder='Tìm kiếm' aria-label='Search')#Search
                     button(type='submit').loupe
-                        img(src="image/icon/loupe.svg", alt="", srcset="")
+                        i.fa.fa-search(aria-hidden='true')
                 .icons
                     a.icon-topbar(href="#")
-                        img(src="image/icon/user.svg", alt="", srcset="")
+                        i.fa.fa-user(aria-hidden='true')
                     a.icon-topbar(href="shop-cart.html")
-                        img(src="image/icon/shopping-cart-of-checkered-design.svg", alt="", srcset="")
+                        i.fa.fa-shopping-cart(aria-hidden='true')
+
             

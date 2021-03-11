@@ -27,7 +27,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #ed5a6b;
+  color: #ed5a6b !important;
 }
 
 img {
@@ -65,25 +65,28 @@ ul li {
   transition: 0.15s;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #454573;
+}
+
 header {
   background-color: #ebe0e0;
 }
 header nav {
   height: 100%;
+  padding: 0 !important;
 }
 header nav .navbar-brand img {
   height: 60px;
   width: auto;
 }
 header nav .icons a {
-  margin-left: 20px;
-}
-header nav .icons a img {
-  width: 20px;
+  margin-left: 10px;
 }
 header nav form button {
   border: none;
   background-color: inherit;
+  color: #454573;
   padding: 0;
   width: 20px;
   position: relative;
@@ -555,6 +558,10 @@ form.cart table.cart-table .cart-product-size .size-box {
 form.cart table.cart-table a.delete-item {
   color: red;
 }
+form.cart table.cart-table a.delete-item:hover {
+  color: #990000;
+  transition: 0.15s;
+}
 form.cart table.cart-table .cart-product-quantity {
   text-align: center;
 }
@@ -624,9 +631,28 @@ form.cart .table-sum .sumary-estimate td {
   }
 }
 
+select {
+  font-size: 16px !important;
+  height: 30px;
+  color: #767676;
+}
+select option {
+  color: #767676;
+}
+
+.order-info {
+  margin-bottom: 20px;
+}
+
 .order-view .order-info {
   margin-left: -15px;
   margin-right: -15px;
+}
+.order-view .order-info .order-sub-title {
+  font-weight: bold;
+  border-bottom: 1px solid #454573;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .order-view .order-input {
   display: flex;
@@ -635,6 +661,26 @@ form.cart .table-sum .sumary-estimate td {
 }
 .order-view .order-input label {
   margin-bottom: 5px;
+}
+.order-view .code-form input {
+  width: 80%;
+  height: 30px;
+}
+.order-view .code-form button {
+  float: right;
+}
+.order-view .sumary-row {
+  font-weight: bold;
+  border-top: 1px solid #454573;
+}
+.order-view .submit-button {
+  padding: 0;
+}
+.order-view .submit-button button {
+  width: 100%;
+}
+.order-view .sum-table td:last-child {
+  text-align: right;
 }
 
 .directory-view {

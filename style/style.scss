@@ -28,7 +28,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: $primary-color;
+  color: $primary-color !important;
 }
 
 img {
@@ -62,10 +62,14 @@ ul {
   background-color: $primary-color !important;
   transition: 0.15s;
 }
+.navbar-light .navbar-nav .nav-link {
+  color: $secondary-color ;
+}
 header {
   background-color: $background-nav;
   nav {
     height: 100%;
+    padding: 0 !important;
     .navbar-brand {
       img {
         height: 60px;
@@ -74,10 +78,7 @@ header {
     }
     .icons {
         a {
-          margin-left: 20px;
-          img {
-            width: 20px;
-          }
+          margin-left: 10px;
         }
       }
     form {
@@ -85,6 +86,7 @@ header {
       button {
         border: none;
         background-color: inherit;
+        color: $secondary-color;
         padding: 0;
         width: 20px;
         position: relative;

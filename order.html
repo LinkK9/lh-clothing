@@ -46,12 +46,12 @@
               </div>
             </li>
         </ul>
-        <div class="search-cart d-flex align-items-center justify-content-end">
+        <div class="search-cart d-flex align-items-center justify-content-between">
           <form class="form-inline my-2 my-lg-0 d-flex flex-nowrap">
             <input class="form-control" type="search" placeholder="Tìm kiếm" aria-label="Search" id="Search">
-            <button class="loupe" type="submit"><img src="image/icon/loupe.svg" alt="" srcset=""></button>
+            <button class="loupe" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
-          <div class="icons"><a class="icon-topbar" href="#"><img src="image/icon/user.svg" alt="" srcset=""></a><a class="icon-topbar" href="shop-cart.html"><img src="image/icon/shopping-cart-of-checkered-design.svg" alt="" srcset=""></a></div>
+          <div class="icons"><a class="icon-topbar" href="#"><i class="fa fa-user" aria-hidden="true"></i></a><a class="icon-topbar" href="shop-cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </nav>
@@ -67,7 +67,7 @@
       <div class="order-title shopcart-title">THÔNG TIN ĐẶT HÀNG</div>
       <form class="order-info d-flex flex-wrap">
         <div class="order-address col-md-6 col"> 
-          <div class="order-address-title">1. Địa chỉ nhận hàng</div>
+          <div class="order-address-title order-sub-title">1. Địa chỉ nhận hàng</div>
           <div class="order-input"> 
             <label for="customer-name">Họ và Tên</label>
             <input id="customer-name" type="text" name="customer-name" placeholder="Nhập họ tên">
@@ -101,24 +101,28 @@
             </select>
             <input class="billing_address_3" name="" type="hidden" value="">
           </div>
+          <div class="order-input"> 
+            <label for="full-address">Địa chỉ</label>
+            <textarea id="full-address" type="textarea" name=""></textarea>
+          </div>
         </div>
-        <div class="order-ship-pay-sum col-md-6 col">
+        <div class="order-ship-pay-sum col-md-6 col-sm">
           <div class="order-ship">
-            <div class="ship-title">2. Vận chuyển</div>
+            <div class="ship-title order-sub-title">2. Vận chuyển</div>
             <div class="ship-info d-flex justify-content-between"> 
               <div class="ship-label">Phí vận chuyển</div>
               <div class="ship-money">0đ</div>
             </div>
           </div>
           <div class="order-code">
-            <div class="code-title">3. Mã giảm giá</div>
-            <form class="code-form">
-              <input type="number" placeholder="Điền mã giảm giá nếu có">
-              <button type="submit">Sử dụng</button>
-            </form>
+            <div class="code-title order-sub-title">3. Mã giảm giá</div>
+            <div class="code-form">
+              <input type="text" placeholder="Điền mã giảm giá nếu có">
+              <button class="btn-2" type="submit">Sử dụng</button>
+            </div>
           </div>
           <div class="pay-method"> 
-            <div class="pay-label">4. Phương thức thanh toán</div>
+            <div class="pay-label order-sub-title">4. Phương thức thanh toán</div>
             <form action="">
               <div class="methods">
                 <input id="credit" type="radio" name="paymentMethod">
@@ -129,15 +133,15 @@
                 <label for="atm-card">Thanh toán qua thẻ ATM</label>
               </div>
               <div class="methods">
-                <input id="cash" type="radio" name="paymentMethod">
+                <input id="cash" type="radio" name="paymentMethod" checked="checked">
                 <label for="cash">Thanh toán khi nhận hàng</label>
               </div>
             </form>
           </div>
           <div class="oder-sum"> 
-            <div class="sum-label">5. Tổng cộng</div>
+            <div class="sum-label order-sub-title">5. Tổng cộng</div>
             <div class="sum-info"> 
-              <table class="sum-table">
+              <table class="sum-table col-md-6 ml-auto col">
                 <tbody>
                   <tr>
                     <td>Tổng giá bán</td>
@@ -153,14 +157,14 @@
                   </tr>
                 </tbody>
                 <tfoot> 
-                  <tr> 
+                  <tr class="sumary-row"> 
                     <td>Tổng cộng</td>
                     <td>340.000đ</td>
                   </tr>
                 </tfoot>
               </table>
-              <div class="submit-button">
-                <button type="submit">Đặt hàng</button>
+              <div class="submit-button col-md-6 ml-auto col">
+                <button class="btn-1" type="submit">Đặt hàng</button>
               </div>
             </div>
           </div>
@@ -173,14 +177,14 @@
       <div class="sub-title">Đăng ký nhận tin </div>
       <form action="">
         <input type="email" name="" placeholder="Email">
-        <button class="btn-1" type="submit">Đăng ký</button>
+        <button class="btn-2" type="submit">Đăng ký</button>
       </form>
     </div>
     <div class="divide-line"></div>
     <div class="footer d-flex justify-content-between flex-wrap">
       <div class="content-col col-md-4 col-6">
         <h6 class="foot-title">LIÊN HỆ</h6>
-        <p class="foot-content">Địa chỉ liên hệ:  Số 348 Nguyễn Trãi, Q. Thanh Xuân, Hà Nội</p>
+        <p class="foot-content">Địa chỉ liên hệ:  Số 348 Nguyễn Trãi, Q.Thanh Xuân, Hà Nội</p>
         <p class="foot-content">Điện thoại: +84369232329</p>
         <p class="foot-content">Fax: +84369232329</p>
         <p class="foot-content">Email: dont@lhclothing.com</p>

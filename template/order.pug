@@ -18,7 +18,7 @@ block main
         .order-title.shopcart-title THÔNG TIN ĐẶT HÀNG
         form.order-info.d-flex.flex-wrap
             .order-address.col-md-6.col 
-                .order-address-title 1. Địa chỉ nhận hàng
+                .order-address-title.order-sub-title 1. Địa chỉ nhận hàng
                 .order-input 
                     label(for="customer-name") Họ và Tên
                     input#customer-name(type="text", name="customer-name", placeholder="Nhập họ tên")
@@ -43,20 +43,22 @@ block main
                     select(name='calc_shipping_sub_district' required='')#customer-sub-district
                         option(value='') Phường / Xã
                     input.billing_address_3(name='' type='hidden' value='')
-            
-            .order-ship-pay-sum.col-md-6.col
+                .order-input 
+                    label(for="full-address") Địa chỉ
+                    textarea#full-address(type="textarea", name="")
+            .order-ship-pay-sum.col-md-6.col-sm
                 .order-ship
-                    .ship-title 2. Vận chuyển
+                    .ship-title.order-sub-title 2. Vận chuyển
                     .ship-info.d-flex.justify-content-between 
                         .ship-label Phí vận chuyển
                         .ship-money 0đ
                 .order-code
-                    .code-title 3. Mã giảm giá
-                    form.code-form
-                        input(type="number", placeholder="Điền mã giảm giá nếu có")
-                        button(type="submit") Sử dụng
+                    .code-title.order-sub-title 3. Mã giảm giá
+                    .code-form
+                        input(type="text", placeholder="Điền mã giảm giá nếu có")
+                        button(type="submit").btn-2 Sử dụng
                 .pay-method 
-                    .pay-label 4. Phương thức thanh toán
+                    .pay-label.order-sub-title 4. Phương thức thanh toán
                     form(action="")
                         .methods
                             input#credit(type="radio", name="paymentMethod")
@@ -65,13 +67,13 @@ block main
                             input#atm-card(type="radio", name="paymentMethod")
                             label(for="atm-card") Thanh toán qua thẻ ATM
                         .methods
-                            input#cash(type="radio", name="paymentMethod") 
+                            input#cash(type="radio", name="paymentMethod", checked="checked") 
                             label(for="cash") Thanh toán khi nhận hàng
                 
                 .oder-sum 
-                    .sum-label 5. Tổng cộng
+                    .sum-label.order-sub-title 5. Tổng cộng
                     .sum-info 
-                        table.sum-table
+                        table.sum-table.col-md-6.ml-auto.col
                             tbody
                                 tr
                                     td Tổng giá bán
@@ -83,10 +85,10 @@ block main
                                     td Giảm giá
                                     td 0đ
                             tfoot 
-                                tr 
+                                tr.sumary-row 
                                     td Tổng cộng
                                     td 340.000đ
 
-                        .submit-button
-                            button(type="submit") Đặt hàng
+                        .submit-button.col-md-6.ml-auto.col
+                            button(type="submit").btn-1 Đặt hàng
 
