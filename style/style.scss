@@ -82,7 +82,7 @@ header {
         }
       }
     form {
-      
+      width: 80%;
       button {
         border: none;
         background-color: inherit;
@@ -98,6 +98,7 @@ header {
     @include mobile {
         form {
           // margin-right: -45px !important;
+          width: 100%;
           
         }
         .icons {
@@ -171,4 +172,4 @@ footer {
   }
 }
 
-@import "style-part/_home-page.scss","style-part/_products-detail.scss","style-part/_shopcart.scss", "style-part/_order.scss", "style-part/_product-list.scss" ;
+@import "style-part/_home-page.scss","style-part/_products-detail.scss","style-part/_shopcart.scss", "style-part/_order.scss", "style-part/_product-list.scss", "style-part/_check-out.scss" ;
