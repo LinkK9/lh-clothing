@@ -48,7 +48,7 @@ block main
     .products-grid.d-flex.flex-wrap 
       +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000đ", "NEW")
       +box-item('image/nibegaito.jpg', "Áo nỉ bé gái", "250.000đ", "NEW")
-      +box-item('image/nu.jpg', "áo khoác lông vũ nữ", "550.000đ", "NEW")
+      +box-item('image/nu.jpg', "Áo khoác lông vũ nữ", "550.000đ", "NEW")
       +box-item('image/nam.jpg', "Áo nỉ nam", "300.000d", "NEW")
       +box-item('image/ao ni nam co mu.jpg', "Áo nỉ có mũ", "250.000đ", "NEW")
       +box-item('image/AO NI NU TRON.jpg', "Áo nỉ nữ cổ tròn", "250.000đ", "NEW")
@@ -75,7 +75,7 @@ block main
       +box-item('image/6it20w001-sm127-2-thumb.jpg', "Áo giữ nhiệt nữ", "250.000đ", "50%", "500.000đ")
   
   .service.container
-    .row  
+    div.d-flex.flex-wrap
       .service-col.col-md-4 
         .service-title QUY ĐỊNH ĐỔI TRẢ
         p.service-content Hỗ trợ đổi trả sản phẩm trong vòng 15 ngày trên toàn hệ thống bán hàng
@@ -87,5 +87,11 @@ block main
       .service-col.col-md-4 
         .service-title TUYỂN DỤNG
         p.service-content LH Clothing đang cần tuyển hơn 40 vị trí nhân viên bán hàng tại Vũ Hán
+  
+  .sub-email.justify-content-center.d-flex.align-items-center
+        .sub-title Đăng ký nhận tin 
+        form(action="")
+            input(type="email", name="", placeholder="Email")
+            button(type="submit").btn-2 Đăng ký
 
 

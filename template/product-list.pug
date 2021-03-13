@@ -4,12 +4,16 @@ extends template-part/layout.pug
 //- Mixxins
 mixin list-col-item(title, target, id, linksp, show)
     .list-col-item.d-block
-        a(href="#" data-toggle="collapse" data-target=target).font-weight-bold=title
+        a(href="#" data-toggle="collapse" class="collapsed" data-target=target).font-weight-bold(class=show)=title
+            span.arrow-icon.ml-2
+                 i.fas.fa-angle-down
             ul(id=id class=show).collapse
                 li.new-arrival.font-weight-bold 
                     a(href=linksp) SẢN PHẨM MỚI
-                li.shirts(data-toggle="collapse" data-target="#shirt-item").font-weight-bold 
+                li.shirts(data-toggle="collapse" class="collapsed" data-target="#shirt-item").font-weight-bold 
                     a(href="#") ÁO
+                    span.arrow-icon.ml-2
+                        i.fas.fa-angle-down
                     ul#shirt-item.collapse.font-weight-normal(class=show)
                         li
                             a(href=linksp) Áo phông
@@ -21,8 +25,10 @@ mixin list-col-item(title, target, id, linksp, show)
                             a(href=linksp) Áo sơ mi
                         li
                             a(href=linksp) Áo khoác
-                li.pants(data-toggle="collapse" data-target="#pant-item").font-weight-bold 
+                li.pants(data-toggle="collapse" class="collapsed" data-target="#pant-item").font-weight-bold 
                     a(href="#") QUẦN
+                        span.arrow-icon.ml-2
+                            i.fas.fa-angle-down
                     ul#pant-item.collapse.font-weight-normal  
                         li
                             a(href=linksp) Quần jeans
@@ -57,19 +63,19 @@ block main
                 a(href='index.html') Trang chủ
             li.breadcrumb-item
                 a(href='index.html') Bé gái
-            li.breadcrumb-item.active(aria-current='page') Danh mục sản phẩm 
+            li.breadcrumb-item.active(aria-current='page') Áo
     
     .directory.container
         .directory-view.d-flex
             .list-col.d-sm-none.d-md-block
                 +list-col-item("NAM", "#nam-products", "nam-products", "product-list.html")
                 +list-col-item("NỮ", "#nu-products", "nu-products", "product-list.html")
-                +list-col-item("BÉ GÁI", "#begai-products", "begai-products", "product-list.html", "show")
+                +list-col-item("BÉ GÁI", "#begai-products", "begai-products", "product-list.html")
                 +list-col-item("BÉ TRAI", "#betrai-products", "betrai-products", "product-list.html")
 
             .products-view 
                 .directory-head.d-flex.justify-content-between
-                    .directory-title.font-weight-bold ÁO NỈ
+                    .directory-title.font-weight-bold Áo Nỉ
                     .directory-sort
                         select(name="sort-item") 
                             option(value="Sắp xếp") Sắp xếp
@@ -78,7 +84,7 @@ block main
                 .products-grid.d-flex.flex-wrap
                     +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000đ")
                     +box-item('image/nibegaito.jpg', "Áo nỉ bé gái", "250.000đ")
-                    +box-item('image/nu.jpg', "áo khoác lông vũ nữ", "550.000đ")
+                    +box-item('image/nu.jpg', "Áo khoác lông vũ nữ", "550.000đ")
                     +box-item('image/nam.jpg', "Áo nỉ nam", "300.000d")
                     +box-item('image/ao ni nam co mu.jpg', "Áo nỉ có mũ", "250.000đ")
                     +box-item('image/AO NI NU TRON.jpg', "Áo nỉ nữ cổ tròn", "250.000đ")

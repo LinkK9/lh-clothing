@@ -109,14 +109,44 @@ header {
 
   }
 }
-
+.sub-email {
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  .sub-title {
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  input {
+    width: 390px;
+    height: 24px;
+    margin-right: 5px;
+    margin-bottom: 0 !important;
+    box-sizing: content-box;
+  }
+  button {
+    background-color: inherit;
+  }
+  @include mobile {
+    display: block !important;
+    font-size: 12px;
+    .sub-title {
+      margin-bottom: 10px;
+    }
+    input {
+      width: 75%;
+      margin-bottom: 5px;
+    }
+  }
+}
 footer {
   p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   h6 {
     font-weight: bold;
   }
+
 
   .footer {
     // width: 100%;
@@ -127,10 +157,28 @@ footer {
     .content-col {
       margin-bottom: 20px;
     }
+    .content-col {
+      a {
+        line-height: 26px;
+      }
+    }
+    .sale-tel {
+      margin-bottom: 20px;
+    }
     .social {
       ul {
         li {
           margin-right: 10px;
+        }
+      }
+    }
+    @include mobile {
+      .content-col:last-child {
+        display: flex;
+        // justify-content: space-between;
+        .social {
+          flex: 0 0 50%;
+          padding-left: 30px;
         }
       }
     }
@@ -139,38 +187,11 @@ footer {
   .divide-line {
     width: 100%;
     height: 1px;
-    background-color: black;
-    margin-bottom: 30px;
+    background-color: $secondary-color;
+    margin-bottom: 15px;
   }
 
-  .sub-email {
-    margin-bottom: 30px;
-    .sub-title {
-      margin-right: 15px;
-      font-weight: bold;
-    }
-    input {
-      width: 390px;
-      height: 24px;
-      margin-right: 5px;
-      margin-bottom: 0 !important;
-      box-sizing: content-box;
-    }
-    button {
-      background-color: inherit;
-    }
-    @include mobile {
-      display: block !important;
-      font-size: 12px;
-      .sub-title {
-        margin-bottom: 10px;
-      }
-      input {
-        width: 75%;
-        margin-bottom: 5px;
-      }
-    }
-  }
+  
 }
 
 @import "style-part/_home-page.scss","style-part/_products-detail.scss","style-part/_shopcart.scss", "style-part/_order.scss", "style-part/_product-list.scss", "style-part/_check-out.scss" ;
