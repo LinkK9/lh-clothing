@@ -23,6 +23,15 @@ img {
       width: 65%;
       display: flex;
       // justify-content: space-between;
+      @include tablet{
+        width: 55%;
+        .gallery-col {
+          display: none;
+        }
+        .image-main {
+          
+        }
+      }
       .gallery-col {
         width: 106px;
         .slick-slide {
@@ -31,7 +40,13 @@ img {
       }
       .image-main {
         width: 550px;
+        // width: auto;
         margin-left: 60px;
+        @include tablet {
+          margin-left: 0;
+          width: 100%;
+
+        }
       }
     }
 
@@ -100,6 +115,9 @@ img {
           margin-bottom: 5px;
           font-weight: 600;
         }
+      }
+      @include tablet{
+        margin-left: 20px;
       }
     }
 

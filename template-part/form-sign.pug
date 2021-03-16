@@ -1,0 +1,54 @@
+.login#login-form
+  .login-but-close
+    i.fas.fa-times.#log-close
+  form(action="").login__form
+    .login__form-status
+      h1.login__form-status--login Đăng Nhập
+      h2.login__form-status--register#change-register Đăng Ký
+
+    input.login__form-input(type="text" placeholder="Địa chỉ Email" name="email") 
+    input.login__form-input.login__form-input--align(type="password" placeholder="Mật khẩu" name="password")
+
+    .login__form-password
+      .login__form-password-remember
+        input.login__form-password-input(type="checkbox" id="remember" name="remember") 
+        label.login__form-password-label(for="remember") Lưu mật khẩu
+      a.login__form-password-forgot(href="#") Quên mật khẩu?
+    input.login__form-submit(type="submit" value="Đăng nhập")
+    p.login__form-title Hoặc đăng nhập qua
+    .login__form-social
+      button.login__form-social-btn.login__form-social-btn--facebook
+        i.fab.fa-facebook-f 
+        | Facebook
+      button.login__form-social-btn.login__form-social-btn--google
+        i.fab.fa-google 
+        | Google
+
+.register#register-form
+  .register__close
+    i.fas.fa-times.register__close-button#register-close
+  form(action="").register__form
+
+    .register__form-status
+      h1.register__form-status--register Đăng Ký
+      h2.register__form-status--login#change-login Đăng Nhập
+
+    input.register__form-input(type="text" placeholder="Họ tên" name="name")
+    input.register__form-input(type="text" placeholder="Email" name="email")
+    input.register__form-input(type="password" placeholder="Mật khẩu từ 6 đến 23 kí tự" name="password")
+    input.register__form-input.register__form-input--align(type="password" placeholder="Nhập lại mật khẩu" name="password")
+
+    .register__form-radio
+      span.register__form-radio--circle
+        input.register__form-radio-male(type="radio" name="gender" id="male" value="male")
+        label.register__form-radio-label(for="male") Nam
+      span.register__form-radio--circle.register__form-radio--align
+        input.register__form-radio-female(type="radio" name="gender" id="female" value="female")
+        label.register__form-radio-label(for="female") Nữ
+ 
+    input.register__form-policy(type="checkbox" id="policy")
+    span.register__form-title
+        label(for="policy") Tôi đã đọc và đồng ý theo
+        a.register__form-title--link(href="#")  điều kiện sử dụng và chính sách của Frequency
+
+    input.register__form-btn(type="submit" value="Tạo tài khoản")

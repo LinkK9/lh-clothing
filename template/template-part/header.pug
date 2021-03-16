@@ -1,7 +1,8 @@
 //- Mixin: 
 mixin menu-link(title)
     li.nav-item.dropdown
-                    a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false').font-weight-bold= title 
+                    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false').font-weight-bold= title 
+                        
                     .dropdown-menu(aria-labelledby='navbarDropdown')
                         a.dropdown-item(href='product-list.html').font-weight-bold SẢN PHẨM MỚI
                         .dropdown-divider
@@ -47,5 +48,6 @@ header.container
                         i.fa.fa-user(aria-hidden='true')
                     a.icon-topbar(href="shop-cart.html")
                         i.fa.fa-shopping-cart(aria-hidden='true')
+                        span.badge.badge-light#cart-quantity 0
 
             
