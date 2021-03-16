@@ -81,6 +81,18 @@ header {
         position: relative;
         left: -10px;
       }
+      a#cart-icon {
+        position: relative;
+        
+        span {
+          position: absolute;
+          top: -30%;
+          left: 50%;
+          background-color: #f8f9fa99;
+          color: $primary-color;
+          border-radius: 50%;
+        }
+      }
       }
     form {
       width: 80%;
@@ -96,10 +108,28 @@ header {
       }
     }
 
+    @include tablet {
+      .search-cart-wrap {
+        padding-right: 10px;
+      }
+    }
+    
+
     @include mobile {
+      .navbar-brand img {
+        height: 50px;
+      }
+      .search-cart-wrap {
+        display: block !important;
+        width: 100%;
+        padding-right: 10px;
+      }
+      .form-control {
+        height: 28px !important;
+      }
         form {
-          // margin-right: -45px !important;
           width: 100%;
+          margin-top: 3px !important  ;
           
         }
         .icons {

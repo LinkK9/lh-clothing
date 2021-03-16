@@ -38,6 +38,7 @@ header.container
                 +menu-link('BÉ GÁI')
                 +menu-link('BÉ TRAI')
             
+        .search-cart-wrap
             .search-cart.d-flex.align-items-center.justify-content-between
                 form.form-inline.my-2.my-lg-0.d-flex.flex-nowrap
                     input.form-control(type='search' placeholder='Tìm kiếm' aria-label='Search')#Search
@@ -46,7 +47,7 @@ header.container
                 .icons
                     a.icon-topbar(href="#")
                         i.fa.fa-user(aria-hidden='true')
-                    a.icon-topbar(href="shop-cart.html")
+                    a.icon-topbar(href="shop-cart.html")#cart-icon
                         i.fa.fa-shopping-cart(aria-hidden='true')
                         span.badge.badge-light#cart-quantity 0
 

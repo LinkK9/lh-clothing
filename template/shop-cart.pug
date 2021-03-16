@@ -54,10 +54,12 @@ block main
                         td.cart-product-size
                             .size-box.font-weight-bold M
                         td.cart-product-quantity
-                            #quantity-counter 
-                                //- button -
-                                input#quantity(type="number", name="", value="1")
-                                //- button +
+                            #quantity-counter.quantity-button.d-flex 
+                                    button(type="button").de-in-button.minus-button
+                                        i.fa.fa-minus
+                                    input#quantity-input(type="number", name="quantity", value="1")
+                                    button(type="button").de-in-button.plus-button
+                                        i.fa.fa-plus
                         td.cart-product-price
                             .product-price 170.000đ
                         td.cart-product-sumary.text-right 
@@ -79,10 +81,12 @@ block main
                         td.cart-product-size
                             .size-box.font-weight-bold S
                         td.cart-product-quantity
-                            #quantity-counter 
-                                //- button -
-                                input#quantity(type="number", name="", value="1")
-                                //- button +
+                            #quantity-counter.quantity-button.d-flex 
+                                    button(type="button").de-in-button.minus-button
+                                        i.fa.fa-minus
+                                    input#quantity-input(type="number", name="quantity", value="1")
+                                    button(type="button").de-in-button.plus-button
+                                        i.fa.fa-plus
                         td.cart-product-price
                             .product-price 170.000đ
                         td.cart-product-sumary.text-right
@@ -120,3 +124,4 @@ block scripts
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns' crossorigin='anonymous')
     script(type='text/javascript' src='lib/slick.js')
     script(src="js/mySlick.js") 
+    script(src="js/main.js")

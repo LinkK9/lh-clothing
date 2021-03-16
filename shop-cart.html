@@ -48,12 +48,14 @@
               </div>
             </li>
         </ul>
+      </div>
+      <div class="search-cart-wrap">
         <div class="search-cart d-flex align-items-center justify-content-between">
           <form class="form-inline my-2 my-lg-0 d-flex flex-nowrap">
             <input class="form-control" type="search" placeholder="Tìm kiếm" aria-label="Search" id="Search">
             <button class="loupe" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
-          <div class="icons"><a class="icon-topbar" href="#"><i class="fa fa-user" aria-hidden="true"></i></a><a class="icon-topbar" href="shop-cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge badge-light" id="cart-quantity">0</span></a></div>
+          <div class="icons"><a class="icon-topbar" href="#"><i class="fa fa-user" aria-hidden="true"></i></a><a class="icon-topbar" href="shop-cart.html" id="cart-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge badge-light" id="cart-quantity">0</span></a></div>
         </div>
       </div>
     </nav>
@@ -95,8 +97,10 @@
                 <div class="size-box font-weight-bold">M</div>
               </td>
               <td class="cart-product-quantity">
-                <div id="quantity-counter"> 
-                  <input id="quantity" type="number" name="" value="1">
+                <div class="quantity-button d-flex" id="quantity-counter"> 
+                  <button class="de-in-button minus-button" type="button"><i class="fa fa-minus"></i></button>
+                  <input id="quantity-input" type="number" name="quantity" value="1">
+                  <button class="de-in-button plus-button" type="button"><i class="fa fa-plus"></i></button>
                 </div>
               </td>
               <td class="cart-product-price">
@@ -121,8 +125,10 @@
                 <div class="size-box font-weight-bold">S</div>
               </td>
               <td class="cart-product-quantity">
-                <div id="quantity-counter"> 
-                  <input id="quantity" type="number" name="" value="1">
+                <div class="quantity-button d-flex" id="quantity-counter"> 
+                  <button class="de-in-button minus-button" type="button"><i class="fa fa-minus"></i></button>
+                  <input id="quantity-input" type="number" name="quantity" value="1">
+                  <button class="de-in-button plus-button" type="button"><i class="fa fa-plus"></i></button>
                 </div>
               </td>
               <td class="cart-product-price">
@@ -270,4 +276,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   <script type="text/javascript" src="lib/slick.js"></script>
   <script src="js/mySlick.js"> </script>
+  <script src="js/main.js"></script>
 </body>

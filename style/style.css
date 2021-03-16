@@ -84,6 +84,17 @@ header nav .icons a:first-child {
   position: relative;
   left: -10px;
 }
+header nav .icons a#cart-icon {
+  position: relative;
+}
+header nav .icons a#cart-icon span {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  background-color: #f8f9fa99;
+  color: #ed5a6b;
+  border-radius: 50%;
+}
 header nav form {
   width: 80%;
 }
@@ -96,9 +107,26 @@ header nav form button {
   position: relative;
   right: 30px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  header nav .search-cart-wrap {
+    padding-right: 10px;
+  }
+}
 @media (max-width: 479px) {
+  header nav .navbar-brand img {
+    height: 50px;
+  }
+  header nav .search-cart-wrap {
+    display: block !important;
+    width: 100%;
+    padding-right: 10px;
+  }
+  header nav .form-control {
+    height: 28px !important;
+  }
   header nav form {
     width: 100%;
+    margin-top: 3px !important;
   }
   header nav .icons {
     display: flex;
@@ -239,7 +267,7 @@ main .sale-products .head-nav {
   main .new-products .head-nav .head-title,
 main .sale-products .head-nav .head-title {
     position: relative;
-    top: 2px;
+    top: 3px;
     align-self: flex-start;
   }
   main .new-products .head-nav .head-menu-list,
@@ -455,8 +483,14 @@ img {
 .product .product-main form.product-info .product-size .size-set .size-box {
   padding-left: 5px;
 }
+@media (max-width: 479px) {
+  .product .product-main form.product-info .product-size .size-set .size-box {
+    padding-top: 2px;
+    padding-left: 6px;
+  }
+}
 .product .product-main form.product-info .box:hover {
-  border: 3px solid #ed5a6b;
+  border: 1px solid #ed5a6b;
 }
 .product .product-main form.product-info .product-quantity {
   margin-top: 20px;
@@ -578,6 +612,20 @@ img {
 }
 .submit-button .payment {
   margin-left: 15px;
+}
+
+.de-in-button {
+  background-color: inherit;
+  border: 0.5px solid #767676;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  color: #454573;
+  border-radius: 0;
+}
+
+.de-in-button:hover {
+  color: #ed5a6b;
 }
 
 .shopcart-title {
