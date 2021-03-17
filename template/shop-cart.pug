@@ -54,7 +54,7 @@ block main
                         td.cart-product-size
                             .size-box.font-weight-bold M
                         td.cart-product-quantity
-                            #quantity-counter.quantity-button.d-flex 
+                            #quantity-counter.quantity-button.d-flex.justify-content-center.align-items-center
                                     button(type="button").de-in-button.minus-button
                                         i.fa.fa-minus
                                     input#quantity-input(type="number", name="quantity", value="1")
@@ -81,7 +81,7 @@ block main
                         td.cart-product-size
                             .size-box.font-weight-bold S
                         td.cart-product-quantity
-                            #quantity-counter.quantity-button.d-flex 
+                            #quantity-counter.quantity-button.d-flex.justify-content-center.align-items-center 
                                     button(type="button").de-in-button.minus-button
                                         i.fa.fa-minus
                                     input#quantity-input(type="number", name="quantity", value="1")
@@ -102,7 +102,7 @@ block main
                         td 2 Sản phẩm
                     tr.sumary-estimate
                         td Số tiền tạm tính
-                        td 340.000đ
+                        td#total-estimate 340.000đ
 
             .submit-button.d-flex.justify-content-end.col-4.ml-auto.pr-0
                 button(type="button", onclick="location.href='index.html'").add-cart.btn-2.col-6 Tiếp tục mua sắm

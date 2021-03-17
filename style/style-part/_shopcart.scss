@@ -91,8 +91,14 @@ form.cart {
             #quantity-counter {
                 margin: 0 auto 0 auto;
                 input {
-                    width: 30px;
+                    width: 24px;
+                    height: 24px;
                     text-align: center;
+                }
+                @include mobile {
+                    button {
+                        font-size: 12px;
+                    }
                 }
             }
            
@@ -133,7 +139,7 @@ form.cart {
     
     
             tbody {
-                p, .color-code, #quantity-counter button {
+                p, .color-code {
                     display: none;
                 }
                 .cart-product-name {

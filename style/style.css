@@ -715,8 +715,14 @@ form.cart table.cart-table .cart-product-quantity #quantity-counter {
   margin: 0 auto 0 auto;
 }
 form.cart table.cart-table .cart-product-quantity #quantity-counter input {
-  width: 30px;
+  width: 24px;
+  height: 24px;
   text-align: center;
+}
+@media (max-width: 479px) {
+  form.cart table.cart-table .cart-product-quantity #quantity-counter button {
+    font-size: 12px;
+  }
 }
 form.cart .table-sum {
   margin-left: auto;
@@ -747,7 +753,7 @@ form.cart .table-sum .sumary-estimate td {
   form.cart .cart-table td {
     padding-top: 5px !important;
   }
-  form.cart .cart-table tbody p, form.cart .cart-table tbody .color-code, form.cart .cart-table tbody #quantity-counter button {
+  form.cart .cart-table tbody p, form.cart .cart-table tbody .color-code {
     display: none;
   }
   form.cart .cart-table tbody .cart-product-name img {
