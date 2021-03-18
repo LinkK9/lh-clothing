@@ -74,10 +74,20 @@
 
 
     // add to cart
-    $("#add-to-cart").on("click",  () => {
+    $("#add-to-cart").on("click",  function() {
         $("#cart-quantity").css("display", "block");
         $("#cart-quantity").text(+$("#cart-quantity").text() + +$("#quantity-input").val());
-        console.log($("#cart-quantity").val());
+        // $("#slick-slide00 div div img").clone().addClass("clone-img").appendTo(".product.container");
+        $(this).parent().parent().prev().find(".slider-for").clone().addClass("clone-img").appendTo(".product.container");
+        // $(".product.container").append(`<div class="clone-img"></div>`);
+        $(".clone-img").animate({
+            left: '75.5%',
+            top: '36.8%',
+            opacity: '0.5',
+            height: '0px',
+            width: '0px'
+          });
+        
     });
 
 
@@ -115,4 +125,36 @@
         }
     });
 
+// pick box
+$(".box").on("click", function(){
+    $(this).parent().children(".box").removeClass("box-active");
+    $(this).addClass("box-active");
+});
 
+
+// update price when user input instead press button
+$(".quantity-input").change(function(){
+    let quantityInput = +$(this).val();
+        // update prices sum
+        let price = $(this).parent().parent().next().find(".product-price").text().replace(".000đ", "");
+        let sumary = $(this).parent().parent().next().next().find(".sumary-of-quantity");
+        sumary.text((quantityInput) * price + ".000đ");
+
+        // update total sum
+        let totalSum = $(this).parent().parent().parent().parent().parent().next().find(".sumary-estimate td:last-child");
+        let productsSumArray = $(".sumary-of-quantity").toArray();
+        let inputsArray = $(".quantity-input").toArray();
+        let numberOfProducts = $(this).parent().parent().parent().parent().parent().next().find(".total-products td:last-child");
+        
+        let sumInput = 0
+        for(let i = 0; i < inputsArray.length; i++) {
+            sumInput += +inputsArray[i].value.replace(".000đ", "");
+        };
+        numberOfProducts.text(sumInput + " Sản phẩm");
+
+        let sumItem = 0;
+        for(let i = 0; i < productsSumArray.length; i++) {
+            sumItem += +productsSumArray[i].innerText.replace(".000đ", "");
+        };
+        totalSum.text(sumItem +  ".000đ");
+});

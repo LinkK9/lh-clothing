@@ -139,6 +139,12 @@ header {
       }
 
   }
+  .show > .nav-link {
+    color: #ed5a6b !important;
+  }
+  .dropdown-item {
+    color: $secondary-color;
+  }
 }
 .sub-email {
   margin-bottom: 30px;
