@@ -45,10 +45,65 @@ header.container
                     button(type='submit').loupe
                         i.fa.fa-search(aria-hidden='true')
                 .icons
-                    a.icon-topbar(href="#")
+                    a.icon-topbar(href="#" data-toggle="modal" data-target="#loginModal" )
                         i.fa.fa-user(aria-hidden='true')
                     a.icon-topbar(href="shop-cart.html")#cart-icon
                         i.fa.fa-shopping-cart(aria-hidden='true')
                         span.badge.badge-light#cart-quantity 0
 
-            
+    #loginModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalLabel.modal-title.font-weight-bold Đăng nhập
+                    button(type="button" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal").float-right.btn-2.px-3 Đăng ký
+                .modal-body
+                    div.d-block
+                    form
+                        .form-group
+                            label(for="") Email của bạn
+                            input.form-control(name='' placeholder='Email' type='email')
+                        .form-group
+                            label(for="")  Mật khẩu của bạn
+                            input.form-control(placeholder='******' type='password')
+                        .row
+                            .col-md-6
+                                .form-group
+                                    button.btn-1.btn-block(type='submit')  Đăng nhập  
+                            .col-md-6.text-right
+                                a.small(href='#') Quên mật khẩu?
+                .modal-footer
+                    .other-login.text-center.mr-auto.ml-auto Hoặc có thể
+                    button(type="button").btn-block.btn-2(href='')
+                            i.fab.fa-facebook-f
+                            |  &nbsp; Đăng nhập bằng facebook
+
+    #signUpModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalLabel.modal-title.font-weight-bold Đăng ký
+                    button(type="button" data-toggle="modal" data-target="#loginModal" data-dismiss="modal" ).float-right.btn-2.px-3 Đăng nhập
+                .modal-body
+                    div.d-block
+                    form
+                        .form-group
+                            label(for="") Họ và tên của bạn
+                            input.form-control(name='' placeholder='Họ và tên' type='text')
+                        .form-group
+                            label(for="") Số điện thoại của bạn
+                            input.form-control(name='' placeholder='Số điện thoại' type='number')
+                        .form-group
+                            label(for="") Email của bạn
+                            input.form-control(name='' placeholder='Email' type='email')
+                        .form-group
+                            label(for="")  Mật khẩu của bạn
+                            input.form-control(placeholder='******' type='password')
+                        div
+                            button.btn-1.btn-block(type='submit')  Đăng ký  
+                            
+                //- .modal-footer
+                //-     .other-login.text-center.mr-auto.ml-auto Hoặc có thể
+                //-     button(type="button").btn-block.btn-2(href='')
+                //-             i.fab.fa-facebook-f
+                //-             |  &nbsp; Đăng nhập bằng facebook

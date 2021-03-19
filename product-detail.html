@@ -55,10 +55,79 @@
             <input class="form-control" type="search" placeholder="Tìm kiếm" aria-label="Search" id="Search">
             <button class="loupe" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
-          <div class="icons"><a class="icon-topbar" href="#"><i class="fa fa-user" aria-hidden="true"></i></a><a class="icon-topbar" href="shop-cart.html" id="cart-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge badge-light" id="cart-quantity">0</span></a></div>
+          <div class="icons"><a class="icon-topbar" href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-user" aria-hidden="true"></i></a><a class="icon-topbar" href="shop-cart.html" id="cart-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge badge-light" id="cart-quantity">0</span></a></div>
         </div>
       </div>
     </nav>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Đăng nhập</h5>
+            <button class="float-right btn-2 px-3" type="button" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal">Đăng ký</button>
+          </div>
+          <div class="modal-body">
+            <div class="d-block"></div>
+            <form>
+              <div class="form-group">
+                <label for="">Email của bạn</label>
+                <input class="form-control" name="" placeholder="Email" type="email">
+              </div>
+              <div class="form-group">
+                <label for=""> Mật khẩu của bạn</label>
+                <input class="form-control" placeholder="******" type="password">
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <button class="btn-1 btn-block" type="submit"> Đăng nhập  </button>
+                  </div>
+                </div>
+                <div class="col-md-6 text-right"><a class="small" href="#">Quên mật khẩu?</a></div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="other-login text-center mr-auto ml-auto">Hoặc có thể</div>
+            <button class="btn-block btn-2" type="button" href=""><i class="fab fa-facebook-f"></i> &nbsp; Đăng nhập bằng facebook</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Đăng ký</h5>
+            <button class="float-right btn-2 px-3" type="button" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Đăng nhập</button>
+          </div>
+          <div class="modal-body">
+            <div class="d-block"></div>
+            <form>
+              <div class="form-group">
+                <label for="">Họ và tên của bạn</label>
+                <input class="form-control" name="" placeholder="Họ và tên" type="text">
+              </div>
+              <div class="form-group">
+                <label for="">Số điện thoại của bạn</label>
+                <input class="form-control" name="" placeholder="Số điện thoại" type="number">
+              </div>
+              <div class="form-group">
+                <label for="">Email của bạn</label>
+                <input class="form-control" name="" placeholder="Email" type="email">
+              </div>
+              <div class="form-group">
+                <label for=""> Mật khẩu của bạn</label>
+                <input class="form-control" placeholder="******" type="password">
+              </div>
+              <div>
+                <button class="btn-1 btn-block" type="submit"> Đăng ký  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <main>
     <nav class="container sub-nav" aria-label="breadcrumb">

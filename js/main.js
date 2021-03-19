@@ -158,3 +158,35 @@ $(".quantity-input").change(function(){
         };
         totalSum.text(sumItem +  ".000đ");
 });
+
+
+
+// Isotope
+
+$(".products-grid").isotope({
+    itemSlector: ".box-item",
+    layoutMode: 'fitRows',
+    getSortData: {
+        number: ".current-price parseFloat"
+    }
+});
+
+// Isotope - sort
+$("#sort").click(function () {
+    // let value = $(this).attr("data-sort");
+
+    $(".products-grid").isotope({
+        sortBy: number,
+        sortAscending: true
+    });
+});
+
+// Isotope - sort-reverse
+$("#sort-reverse").click(function () {
+    // let value = $(this).attr("data-sort");
+
+    $(".products-grid").isotope({
+        sortBy: number,
+        sortAscending: false
+    });
+});
