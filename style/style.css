@@ -822,7 +822,8 @@ form.cart .table-sum .sumary-estimate td {
 select {
   font-size: 16px !important;
   height: 30px;
-  color: #767676;
+  color: #454573;
+  border-color: #767676;
 }
 @media (max-width: 479px) {
   select {
@@ -830,7 +831,7 @@ select {
   }
 }
 select option {
-  color: #767676;
+  color: #454573;
 }
 
 .order-info {

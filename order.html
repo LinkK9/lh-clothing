@@ -87,7 +87,7 @@
           </div>
           <div class="modal-footer">
             <div class="other-login text-center mr-auto ml-auto">Hoặc có thể</div>
-            <button class="btn-block btn-2" type="button" href=""><i class="fab fa-facebook-f"></i> &nbsp; Đăng nhập bằng facebook</button>
+            <button class="btn-block btn-2" type="button"><i class="fab fa-facebook-f"></i> &nbsp; Đăng nhập bằng facebook</button>
           </div>
         </div>
       </div>
@@ -155,6 +155,9 @@
             <label for="customer-province">Tỉnh / Thành phố</label>
             <select name="calc_shipping_provinces" required="" id="customer-province">
               <option value="">Tỉnh / Thành phố</option>
+              <option value="Hà Nội">Hà Nội</option>
+              <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+              <option value="Đà Nẵng">Đà Nẵng</option>
             </select>
             <input class="billing_address_1" name="" type="hidden" value="">
           </div>
@@ -213,21 +216,21 @@
                 <tbody>
                   <tr>
                     <td>Tổng giá bán</td>
-                    <td>340.000đ</td>
+                    <td id="products-price">340.000đ</td>
                   </tr>
                   <tr> 
                     <td>Vận chuyển</td>
-                    <td>0đ</td>
+                    <td id="final-ship">0đ</td>
                   </tr>
                   <tr> 
                     <td>Giảm giá</td>
-                    <td>0đ</td>
+                    <td id="final-discount">0đ</td>
                   </tr>
                 </tbody>
                 <tfoot> 
                   <tr class="sumary-row"> 
                     <td>Tổng cộng</td>
-                    <td>340.000đ</td>
+                    <td id="final-fee">340.000đ</td>
                   </tr>
                 </tfoot>
               </table>

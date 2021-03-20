@@ -4,13 +4,14 @@
 select {
     font-size: 16px !important;
     height: 30px;
-    color: rgb(118, 118, 118);
+    color: $secondary-color;
+    border-color: rgb(118, 118, 118);
     @include mobile {
         height: 24px;
     }
 
     option {
-        color: rgb(118, 118, 118);
+        color: $secondary-color;
     }
 }
 .order-info {

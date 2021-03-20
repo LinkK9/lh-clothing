@@ -48,7 +48,7 @@ mixin box-item(src, title, currentPrice, oldPrice)
         img(src=src)
     .box-title.text-center=title  
     .box-price.d-flex.justify-content-center
-      .current-price.font-weight-bold=currentPrice
+      .current-price.font-weight-bold.number=currentPrice
 //- Pug
 block title
   title LH Clothing
@@ -77,9 +77,9 @@ block main
                     .directory-title.font-weight-bold Áo Nỉ
                     .directory-sort
                         select(name="sort-item") 
-                            option(value="Sắp xếp") Sắp xếp
-                            option(value="Giá: Cao đến thấp" data-sort="number")#sort-reverse Giá: Cao đến thấp
-                            option(value="Giá: Thấp đến cao" data-sort="number")#sort Giá: Thấp đến cao
+                            option(value="Giá: Thấp đến cao") Giá: Thấp đến cao
+                            option(value="Giá: Cao đến thấp") Giá: Cao đến thấp
+                            
                 .products-grid.d-flex.flex-wrap
                     +box-item('image/betrai.jpg', "Áo nỉ bé trai", "250.000đ")
                     +box-item('image/nibegaito.jpg', "Áo nỉ bé gái", "250.000đ")
@@ -116,5 +116,5 @@ block scripts
     script(type='text/javascript' src='https://code.jquery.com/jquery-1.11.0.min.js')
     script(type='text/javascript' src='https://code.jquery.com/jquery-migrate-1.2.1.min.js')
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns' crossorigin='anonymous')
-    //- script(src="lib/isotope.pkgd.min.js")
+    script(src="lib/isotope.pkgd.min.js")
     script(src="js/main.js")

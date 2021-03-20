@@ -32,6 +32,9 @@ block main
                     label(for="customer-province") Tỉnh / Thành phố
                     select(name='calc_shipping_provinces' required='')#customer-province
                         option(value='') Tỉnh / Thành phố
+                        option(value="Hà Nội") Hà Nội
+                        option(value="Hồ Chí Minh") Hồ Chí Minh
+                        option(value="Đà Nẵng") Đà Nẵng
                     input.billing_address_1(name='' type='hidden' value='')
                 .order-input 
                     label(for="customer-district") Quận / Huyện
@@ -90,17 +93,17 @@ block main
                             tbody
                                 tr
                                     td Tổng giá bán
-                                    td 340.000đ
+                                    td#products-price 340.000đ
                                 tr 
                                     td Vận chuyển
-                                    td 0đ
+                                    td#final-ship 0đ
                                 tr 
                                     td Giảm giá
-                                    td 0đ
+                                    td#final-discount 0đ
                             tfoot 
                                 tr.sumary-row 
                                     td Tổng cộng
-                                    td 340.000đ
+                                    td#final-fee 340.000đ
 
                         .submit-button.col-md-6.ml-auto.col
                             button(type="button", onclick="location.href='check-out.html'").btn-1 Đặt hàng

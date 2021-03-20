@@ -159,34 +159,59 @@ $(".quantity-input").change(function(){
         totalSum.text(sumItem +  ".000đ");
 });
 
+// final-fee
+
+$("#customer-province").change(function(){
+    let province = $(this).val();
+    
+    if(province === null || province === "Hà Nội"){
+        $(".ship-money").text("0đ");
+    }else{
+        $(".ship-money").text("30.000đ");
+    };
+
+    $("#final-ship").text($(".ship-money").text());
+
+    let shipFee = parseFloat($("#final-ship").text());
+    let productsPrice = parseFloat($("#products-price").text());
+    let discount = parseFloat($("#final-discount").text());
+    $("#final-fee").text(shipFee + productsPrice + discount + ".000đ" );
+});
+
+
+
 
 
 // Isotope
 
-$(".products-grid").isotope({
-    itemSlector: ".box-item",
+let $grid = $(".products-grid").isotope({
+    itemSelector: ".box-item",
     layoutMode: 'fitRows',
     getSortData: {
-        number: ".current-price parseFloat"
+        number: ".number parseFloat"
     }
 });
 
-// Isotope - sort
-$("#sort").click(function () {
-    // let value = $(this).attr("data-sort");
 
-    $(".products-grid").isotope({
-        sortBy: number,
+$grid.isotope({
+        sortBy: "number",
         sortAscending: true
-    });
+})
+$("select").change(function(){
+    if($(this).val() == "Giá: Thấp đến cao"){
+        $grid.isotope({
+            sortBy: "number",
+            sortAscending: true
+        });
+    }
 });
 
-// Isotope - sort-reverse
-$("#sort-reverse").click(function () {
-    // let value = $(this).attr("data-sort");
 
-    $(".products-grid").isotope({
-        sortBy: number,
-        sortAscending: false
-    });
+$("select").change(function(){
+    if($(this).val() == "Giá: Cao đến thấp"){
+        $grid.isotope({
+            sortBy: "number",
+            sortAscending: false
+        });
+    }
 });
